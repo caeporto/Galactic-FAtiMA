@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/FAtiMA.culture/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/FAtiMA.culture">
+      <sourceFolder url="file://$MODULE_DIR$/FAtiMA.culture/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="FAtiMA" />
+    <orderEntry type="module" module-name="FAtiMA.DeliberativeComponent" />
+    <orderEntry type="module" module-name="FAtiMA.ReactiveComponent" />
+    <orderEntry type="module" module-name="FAtiMA.OCCAffectDerivation" />
+    <orderEntry type="module" module-name="FAtiMA.MotivationalSystem" />
+    <orderEntry type="module" module-name="FAtiMA.ToM" />
+  </component>
+</module>

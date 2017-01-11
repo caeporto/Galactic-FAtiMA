@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AgentLauncher/AgentLauncher.iml" filepath="$PROJECT_DIR$/AgentLauncher/AgentLauncher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA/FAtiMA.iml" filepath="$PROJECT_DIR$/FAtiMA/FAtiMA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/FAtiMA.DeliberativeComponent.iml" filepath="$PROJECT_DIR$/FAtiMA.DeliberativeComponent/FAtiMA.DeliberativeComponent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.EmotionalIntelligence/FAtiMA.EmotionalIntelligence.iml" filepath="$PROJECT_DIR$/FAtiMA.EmotionalIntelligence/FAtiMA.EmotionalIntelligence.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.Empathy/FAtiMA.Empathy.iml" filepath="$PROJECT_DIR$/FAtiMA.Empathy/FAtiMA.Empathy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/FAtiMA.MotivationalSystem.iml" filepath="$PROJECT_DIR$/FAtiMA.MotivationalSystem/FAtiMA.MotivationalSystem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.OCCAffectDerivation/FAtiMA.OCCAffectDerivation.iml" filepath="$PROJECT_DIR$/FAtiMA.OCCAffectDerivation/FAtiMA.OCCAffectDerivation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.ReactiveComponent/FAtiMA.ReactiveComponent.iml" filepath="$PROJECT_DIR$/FAtiMA.ReactiveComponent/FAtiMA.ReactiveComponent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.SocialRelations/FAtiMA.SocialRelations.iml" filepath="$PROJECT_DIR$/FAtiMA.SocialRelations/FAtiMA.SocialRelations.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.ToM/FAtiMA.ToM.iml" filepath="$PROJECT_DIR$/FAtiMA.ToM/FAtiMA.ToM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.culture/FAtiMA.culture.iml" filepath="$PROJECT_DIR$/FAtiMA.culture/FAtiMA.culture.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Galactic-FAtiMA.iml" filepath="$PROJECT_DIR$/Galactic-FAtiMA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WorldTest/WorldTest.iml" filepath="$PROJECT_DIR$/WorldTest/WorldTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FAtiMA.AdvancedMemory/src/main/main.iml" filepath="$PROJECT_DIR$/FAtiMA.AdvancedMemory/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgentLauncher.iml" filepath="$PROJECT_DIR$/AgentLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.iml" filepath="$PROJECT_DIR$/FAtiMA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.AdvancedMemory.iml" filepath="$PROJECT_DIR$/FAtiMA.AdvancedMemory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent.iml" filepath="$PROJECT_DIR$/FAtiMA.DeliberativeComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.EmotionalIntelligence.iml" filepath="$PROJECT_DIR$/FAtiMA.EmotionalIntelligence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.Empathy.iml" filepath="$PROJECT_DIR$/FAtiMA.Empathy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem.iml" filepath="$PROJECT_DIR$/FAtiMA.MotivationalSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.OCCAffectDerivation.iml" filepath="$PROJECT_DIR$/FAtiMA.OCCAffectDerivation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.ReactiveComponent.iml" filepath="$PROJECT_DIR$/FAtiMA.ReactiveComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.SocialRelations.iml" filepath="$PROJECT_DIR$/FAtiMA.SocialRelations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.ToM.iml" filepath="$PROJECT_DIR$/FAtiMA.ToM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAtiMA.culture.iml" filepath="$PROJECT_DIR$/FAtiMA.culture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LanguageServer.iml" filepath="$PROJECT_DIR$/LanguageServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WorldTest.iml" filepath="$PROJECT_DIR$/WorldTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data.iml" filepath="$PROJECT_DIR$/data.iml" />
     </modules>
   </component>
 </project>

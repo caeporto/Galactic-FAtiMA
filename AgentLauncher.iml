@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/AgentLauncher/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/AgentLauncher">
+      <sourceFolder url="file://$MODULE_DIR$/AgentLauncher/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="FAtiMA" />
+    <orderEntry type="module" module-name="FAtiMA.MotivationalSystem" />
+    <orderEntry type="module" module-name="FAtiMA.DeliberativeComponent" />
+    <orderEntry type="module" module-name="FAtiMA.ReactiveComponent" />
+    <orderEntry type="module" module-name="FAtiMA.OCCAffectDerivation" />
+    <orderEntry type="module" module-name="FAtiMA.EmotionalIntelligence" />
+    <orderEntry type="module" module-name="FAtiMA.SocialRelations" />
+    <orderEntry type="module" module-name="FAtiMA.ToM" />
+    <orderEntry type="module" module-name="FAtiMA.culture" />
+    <orderEntry type="module" module-name="FAtiMA.AdvancedMemory" />
+    <orderEntry type="module" module-name="FAtiMA.Empathy" />
+  </component>
+</module>

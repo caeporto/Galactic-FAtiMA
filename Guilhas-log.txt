@@ -7,4 +7,204 @@ LOADING Personality: data/characters/minds/roles/Guilhas/Guilhas.xml
 
 Connecting to localhost:46874
 
-Exception: java.net.ConnectException: Connection refused
+Adding Reactive rules in the ReactiveComponent:
+
+Adding Goals in the DeliberativeComponent:
+
+Guilhas: Processing message: AGENTS Guilhas apple chocolate User
+
+Sending Look-AT: Guilhas
+
+Sending Look-AT: apple
+
+Sending Look-AT: chocolate
+
+Sending Look-AT: User
+
+Guilhas: Processing message: LOOK-AT Guilhas role:Guilhas sex:M name:Guilhas location:Office time:Morning isPerson:True 
+
+PropertyChanged: * SELF(role) Guilhas
+
+PropertyChanged: * SELF(role) Guilhas
+
+Look-At:Guilhas role Guilhas
+
+PropertyChanged: * SELF(sex) M
+
+PropertyChanged: * SELF(sex) M
+
+Look-At:Guilhas sex M
+
+PropertyChanged: * SELF(name) Guilhas
+
+PropertyChanged: * SELF(name) Guilhas
+
+Look-At:Guilhas name Guilhas
+
+PropertyChanged: * SELF(location) Office
+
+PropertyChanged: * SELF(location) Office
+
+Look-At:Guilhas location Office
+
+PropertyChanged: * SELF(time) Morning
+
+PropertyChanged: * SELF(time) Morning
+
+Look-At:Guilhas time Morning
+
+PropertyChanged: * SELF(isPerson) True
+
+PropertyChanged: * SELF(isPerson) True
+
+Look-At:Guilhas isPerson True
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(role)Guilhas
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(sex)M
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(name)Guilhas
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(location)Office
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(time)Morning
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(isPerson)True
+
+Guilhas: Processing message: ACTION-FINISHED Guilhas look-at Guilhas
+
+appraising event: EVENT(Guilhas,look-at,Guilhas)
+
+Guilhas: Processing message: LOOK-AT apple isFruit:True eatable:True eaten:False onfloor:True type:object 
+
+PropertyChanged: * apple(isFruit) True
+
+PropertyChanged: * apple(isFruit) True
+
+Look-At:apple isFruit True
+
+PropertyChanged: * apple(eatable) True
+
+PropertyChanged: * apple(eatable) True
+
+Look-At:apple eatable True
+
+PropertyChanged: * apple(eaten) False
+
+PropertyChanged: * apple(eaten) False
+
+Look-At:apple eaten False
+
+PropertyChanged: * apple(onfloor) True
+
+PropertyChanged: * apple(onfloor) True
+
+Look-At:apple onfloor True
+
+PropertyChanged: * apple(type) object
+
+PropertyChanged: * apple(type) object
+
+Look-At:apple type object
+
+Adding 1st level intention: Eat(apple)
+
+Adding a new Intention: Eat(apple)
+
+Guilhas: Processing message: ACTION-FINISHED Guilhas look-at apple
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Eat(apple)
+
+appraising event: EVENT(Guilhas,look-at,apple)
+
+Guilhas: Processing message: LOOK-AT chocolate isFruit:False isChocolate:True eatable:True eaten:False type:object 
+
+PropertyChanged: * chocolate(isFruit) False
+
+PropertyChanged: * chocolate(isFruit) False
+
+Look-At:chocolate isFruit False
+
+PropertyChanged: * chocolate(isChocolate) True
+
+PropertyChanged: * chocolate(isChocolate) True
+
+Look-At:chocolate isChocolate True
+
+PropertyChanged: * chocolate(eatable) True
+
+PropertyChanged: * chocolate(eatable) True
+
+Look-At:chocolate eatable True
+
+PropertyChanged: * chocolate(eaten) False
+
+PropertyChanged: * chocolate(eaten) False
+
+Look-At:chocolate eaten False
+
+PropertyChanged: * chocolate(type) object
+
+PropertyChanged: * chocolate(type) object
+
+Look-At:chocolate type object
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(apple), SELF:Pick(apple)]
+
+Selecting Action: SELF:Pick(apple)from plan:Plan P=1.0 Steps: [SELF:Eat(apple), SELF:Pick(apple)]
+
+Sending action for execution: Pick apple
+
+Cannot act now!
+
+Guilhas: Processing message: ACTION-FINISHED Guilhas look-at chocolate
+
+appraising event: EVENT(Guilhas,look-at,chocolate)
+
+Guilhas: Processing message: LOOK-AT User isPerson:True power:10 type:character 
+
+PropertyChanged: * User(isPerson) True
+
+PropertyChanged: * User(isPerson) True
+
+Look-At:User isPerson True
+
+PropertyChanged: * User(power) 10
+
+PropertyChanged: * User(power) 10
+
+Look-At:User power 10
+
+PropertyChanged: * User(type) character
+
+PropertyChanged: * User(type) character
+
+Look-At:User type character
+
+Guilhas: Processing message: ACTION-FINISHED Guilhas look-at User
+
+appraising event: EVENT(Guilhas,look-at,User)
+
+Guilhas: Processing message: PROPERTY-CHANGED * apple(onfloor) False
+
+PropertyChanged: * apple(onfloor) False
+
+Guilhas: Processing message: PROPERTY-CHANGED * apple(onfloor) False
+
+PropertyChanged: * apple(onfloor) False
+
+Guilhas: Processing message: PROPERTY-CHANGED * Guilhas(has,apple) True
+
+PropertyChanged: * Guilhas(has,apple) True
+
+Reporting property changed: PROPERTY-CHANGED Guilhas(has,apple)True
+
+Guilhas: Processing message: PROPERTY-CHANGED * Guilhas(has,apple) True
+
+PropertyChanged: * Guilhas(has,apple) True
+
+Guilhas: Processing message: ACTION-FINISHED Guilhas Pick apple
+
+can act now!
+
+appraising event: EVENT(Guilhas,Pick,apple)

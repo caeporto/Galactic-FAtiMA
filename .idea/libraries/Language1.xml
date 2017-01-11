@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Language1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/WorldTest/Language.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
