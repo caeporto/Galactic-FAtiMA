@@ -1,0 +1,61 @@
+<GoalLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./schemas/GoalLibrary.xsd">
+	<ActivePursuitGoal name="Eat([target])">
+		<PreConditions>
+			<Property name="[target](eatable)" operator="=" value="True" />
+			<Property name="[target](onfloor)" operator="=" value="True" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="Eat" target="[target]" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="TellWrong(User)">
+		<PreConditions>
+			<Property name="badsequence()" operator="=" value="True" />
+			<NewEvent occurred="True" subject="User" action="SelectNote" target="[x]" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="TellWrong" target="User" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="Congratulate(User)">
+		<PreConditions>
+			<Property name="goodsequence()" operator="=" value="True" />
+			<NewEvent occurred="True" subject="User" action="SelectNote" target="[x]" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="Congratulate" target="User" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="CongratulateForDuration(User)">
+		<PreConditions>
+			<Property name="goodDurationSequence()" operator="=" value="True" />
+			<NewEvent occurred="True" subject="User" action="SelectDuration" target="[x]" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="Congratulate" target="User" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+	<ActivePursuitGoal name="TellWrongDuration(User)">
+		<PreConditions>
+			<Property name="badDurationSequence()" operator="=" value="True" />
+			<NewEvent occurred="True" subject="User" action="SelectDuration" target="[x]" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="TellWrong" target="User" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+</GoalLibrary>

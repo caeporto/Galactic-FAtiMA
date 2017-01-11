@@ -1,0 +1,118 @@
+<DomainActions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./schemas/Actions.xsd">
+
+	<Action name="Cry()">
+		<PreConditions>
+		</PreConditions>
+		<Effects>
+		</Effects>
+		<EffectsOnDrives>
+		</EffectsOnDrives>
+	</Action>
+
+
+	<Action name="Eat([food])">
+		<PreConditions>
+			<Property name="[food](eatable)" operator="=" value="True"/>
+			<Property name="[food](availability)" operator="=" value="True"/>
+			<!--<Property name="[AGENT](holds)" operator="=" value="[food]"/>-->
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<!--<Property name="[AGENT](holds)" operator="=" value="none"/>-->
+				<Property name="[AGENT](eatenFood)[food]" operator="=" value="True"/>
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Physiology" drive="Food" target="[AGENT]" value="+8"/>
+			<Motivator hierarchy="Safety" drive="PhysiologicalSafety" target="[AGENT]" value="+2"/>
+		</EffectsOnDrives>
+	</Action>
+
+	<Action name="Drink([liquid])">
+		<PreConditions>
+			<Property name="[liquid](drinkable)" operator="=" value="True" />
+			<Property name="[liquid](availability)" operator="=" value="True" />
+			<!--<Property name="[AGENT](holds)" operator="=" value="[liquid]"/>-->
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<!--<Property name="[AGENT](holds)" operator="=" value="none"/>-->
+				<Property name="[AGENT](drankLiquid)[liquid]" operator="=" value="True"/>
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Physiology" drive="Liquid" target="[AGENT]" value="+4"/>
+			<Motivator hierarchy="Safety" drive="PhysiologicalSafety" target="[AGENT]" value="+4"/>
+		</EffectsOnDrives>
+	</Action>
+
+	<Action name="RestOn([target])">
+		<PreConditions>
+			<Property name="[target](canRest)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<!--<Property name="[AGENT](holds)" operator="=" value="none"/>-->
+				<!--<Property name="[AGENT](on)" operator="=" value="[target]"/>-->
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Physiology" drive="Rest" target="[AGENT]" value="+3"/>
+			<Motivator hierarchy="Safety" drive="PhysiologicalSafety" target="[AGENT]" value="+1"/>
+		</EffectsOnDrives>
+	</Action>
+
+	<Action name="Bully([target])">
+		<PreConditions>
+			<Property name="[target](role)" operator="=" value="Victim"/>
+			<RecentEvent occurred="False" subject="[target]" action="FightBack" target="[AGENT]"/> <!-- if victim hasn't fought back -->
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<!--<Property name="[AGENT](holds)" operator="=" value="none"/>-->
+				<!--<Property name="[target](bullied)" operator="=" value="True"/>-->
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Relationships" drive="GiveLove" target="[AGENT]" value="+5"/>
+			<Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-5"/>
+			<Motivator hierarchy="Safety" drive="PhysiologicalSafety" target="[target]" value="-2"/>
+		</EffectsOnDrives>
+	</Action>
+
+	<!-- probability of fighting back -->
+	<Action name="FightBack([target])" probability="0.4">
+		<PreConditions>
+			<Property name="[target](role)" operator="=" value="Bully" /> 
+			<RecentEvent occurred="True" subject="[target]" action="Bully" target="[SELF]" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<!--<Property name="[AGENT](holds)" operator="=" value="none"/>-->
+				<!--<Property name="[target](foughtback)" operator="=" value="True"/>-->
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Safety" drive="PhysiologicalSafety" target="[target]" value="-5"/>
+		</EffectsOnDrives>
+	</Action>
+
+	<Action name="SpeechAct([target],mock)">
+		<PreConditions>
+			<Property name="[target](role)" operator="=" value="Victim"/>
+			<Property name="[target]" operator="!=" value="[AGENT]"/>
+		</PreConditions>
+		<Effects>
+			<Effect probability="1">
+				<Property name="SpeechContext()" operator="=" value="#EVENT([AGENT],SpeechAct,[target],[type])"/>
+			</Effect>
+		</Effects>
+		<EffectsOnDrives>
+			<Motivator hierarchy="Relationships" drive="GiveLove" target="[AGENT]" value="+2"/>
+			<Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-2"/>
+		</EffectsOnDrives>
+	</Action>
+	
+	
+</DomainActions>

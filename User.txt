@@ -1,0 +1,3 @@
+isPerson True
+power 10
+type character

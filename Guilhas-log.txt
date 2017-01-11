@@ -1,0 +1,10 @@
+
+LOAD: data/characters/minds/SimpleActions.xml
+
+LOAD: data/characters/minds/SimpleGoalLibrary.xml
+
+LOADING Personality: data/characters/minds/roles/Guilhas/Guilhas.xml
+
+Connecting to localhost:46874
+
+Exception: java.net.ConnectException: Connection refused

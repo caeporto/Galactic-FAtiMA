@@ -1,0 +1,30 @@
+<GoalLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./schemas/GoalLibrary.xsd">
+	<ActivePursuitGoal name="Drink([target])">
+		<PreConditions>
+			<Property name="[target](isDrinkable)" operator="=" value="True" />
+			<Property name="[target](isFruit)" operator="=" value="True" />	
+			<Property name="[target](isEmpty)" operator="=" value="False" />	
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="Drink" target="[target]" />
+		</SucessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect drive="Energy" target="[SELF]" value="+3"/>
+		</ExpectedEffects>		
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="Swim">
+		<PreConditions>
+			<Property name="[SELF](isOnIsland)" operator="=" value="True" />
+		</PreConditions>
+		<SucessConditions>
+			<NewEvent occurred="True" subject="SELF" action="Swim"/>
+		</SucessConditions>
+		<FailureConditions>
+			<NewEvent occurred="True" subject="SELF" action="Drown"/>
+		</FailureConditions>	
+	</ActivePursuitGoal>
+</GoalLibrary>

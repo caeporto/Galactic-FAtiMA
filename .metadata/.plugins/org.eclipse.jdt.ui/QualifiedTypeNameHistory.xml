@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.NeedsLoaderHandler"/>
+<fullyQualifiedTypeName name="FAtiMA.Core.wellFormedNames.Symbol"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.PhysiologyNeeds"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.RelationshipNeeds"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.EsteemNeeds"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.MotivatorHierarchy"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.SafetyNeeds"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.RealizationNeeds"/>
+<fullyQualifiedTypeName name="java.lang.Short"/>
+<fullyQualifiedTypeName name="FAtiMA.Core.componentTypes.IComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.motivationalSystem.MotivationalComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.maslowHierarchyOfNeeds.MotivationalComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.advancedMemoryComponent.AdvancedMemoryComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.emotionalIntelligence.EmotionalIntelligence"/>
+<fullyQualifiedTypeName name="FAtiMA.culture.CulturalDimensionsComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.ToM.ToMComponent"/>
+<fullyQualifiedTypeName name="FAtiMA.Core.util.ConfigurationManager"/>
+<fullyQualifiedTypeName name="FAtiMA.empathy.EmpathyComponent"/>
+<fullyQualifiedTypeName name="Language.SactException"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+isPerson True
+isPresent True
+has none
+possibleLocation,Afternoon unknown
+knowPossibleLocation,Afternoon False
+type character

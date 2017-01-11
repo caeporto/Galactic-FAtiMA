@@ -1,0 +1,5 @@
+isFruit True
+eatable True
+eaten False
+onfloor True
+type object

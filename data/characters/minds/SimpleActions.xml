@@ -1,0 +1,680 @@
+<DomainActions>
+	<Action name="Drop([target])">
+		<PreConditions>
+			<Property name="[AGENT]" operator="!=" value="[target]" />
+			<Property name="[AGENT](has,[target])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="[target](onfloor)" operator="=" value="True"/>
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="Pick([target])">
+		<PreConditions>
+			<Property name="[AGENT]" operator="!=" value="[target]" />
+			<Property name="[target](onfloor)" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="[target](onfloor)" operator="=" value="False"/>
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="[AGENT](has,[target])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="Eat([target])">
+		<PreConditions>
+			<Property name="[target](eatable)" operator="=" value="True" />
+			<Property name="[AGENT]" operator="!=" value="[target]" />
+			<Property name="[AGENT](has,[target])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="[AGENT](has,[target])" operator="=" value="False" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="StartPlaying()">
+		<PreConditions>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="sequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	
+	<Action name="Congratulate([target])">
+		<PreConditions>
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="goodsequence()" operator="=" value="False" />
+			</Effect>	
+		</Effects>
+	</Action>
+	
+	<Action name="TellWrong([target])">
+		<PreConditions>
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="badsequence()" operator="=" value="False" />
+			</Effect>	
+		</Effects>
+	</Action>
+	
+	<Action name="SelectNote([note])">
+		<PreConditions>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="lastNote([note])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+
+	<Action name="DeleteNote()">
+		<PreConditions>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="deleteNote()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+
+	<Action name="SelectDuration([t])">
+		<PreConditions>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="lastDuration([t])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	
+	<!-- inference operators, the name of these operators must start with "Inference" -->
+
+	<Action name="InferenceN1()">
+		<PreConditions>
+			<Property name="sequence()" operator="=" value="True" />
+			<Property name="lastNote([n])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastNote([n])" operator="=" value="False" />
+			</Effect>	
+			<Effect probability="1.0">
+				<Property name="sequence()" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence([n])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceN2()">
+		<PreConditions>
+			<Property name="sequence([n1])" operator="=" value="True" />
+			<Property name="lastNote([n2])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastNote([n2])" operator="=" value="False" />
+			</Effect>		
+			<Effect probability="1.0">
+				<Property name="sequence([n1])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence([n1],[n2])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceN3()">
+		<PreConditions>
+			<Property name="sequence([n1],[n2])" operator="=" value="True" />
+			<Property name="lastNote([n3])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastNote([n3])" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="sequence([n1],[n2])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence([n2],[n3])" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodsequence()" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badsequence()" operator="=" value="False" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceD1()">
+		<PreConditions>
+			<Property name="sequence()" operator="=" value="True" />
+			<Property name="deleteNote()" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="deleteNote()" operator="=" value="False" />
+			</Effect>	
+		</Effects>
+	</Action>
+	<Action name="InferenceD2()">
+		<PreConditions>
+			<Property name="sequence([n1])" operator="=" value="True" />
+			<Property name="deleteNote()" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="deleteNote()" operator="=" value="False" />
+			</Effect>		
+			<Effect probability="1.0">
+				<Property name="sequence([n1])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceD3()">
+		<PreConditions>
+			<Property name="sequence([n1],[n2])" operator="=" value="True" />
+			<Property name="deleteNote()" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="deleteNote()" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="sequence([n1],[n2])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence([n1])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceBadSequence1()">
+		<PreConditions>
+			<Property name="sequence(Do,Re)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="sequence(Do,Re)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence(Re)" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badsequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodSequence1()">
+		<PreConditions>
+			<Property name="sequence(Mi,Fa)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="sequence(Mi,Fa)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence(Fa)" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodsequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodSequence2()">
+		<PreConditions>
+			<Property name="sequence(Do,Sol)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="sequence(Do,Sol)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sequence(Sol)" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodsequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceDuration1()">
+		<PreConditions>
+			<Property name="durationSequence()" operator="=" value="True" />
+			<Property name="lastDuration([t])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastDuration([t])" operator="=" value="False" />
+			</Effect>	
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t])" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodDurationSequence()" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badDurationSequence()" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration([t])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceDuration2()">
+		<PreConditions>
+			<Property name="durationSequence([t1])" operator="=" value="True" />
+			<Property name="lastDuration([t2])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastDuration([t2])" operator="=" value="False" />
+			</Effect>		
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2])" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sumDuration([t2])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceDuration3()">
+		<PreConditions>
+			<Property name="durationSequence([t1],[t2])" operator="=" value="True" />
+			<Property name="lastDuration([t3])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastDuration([t3])" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sumDuration([t3])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceDuration4()">
+		<PreConditions>
+			<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="True" />
+			<Property name="lastDuration([t4])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="lastDuration([t4])" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3],[t4])" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sumDuration([t4])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum11()">
+		<PreConditions>
+			<Property name="totalDuration(1)" operator="=" value="True" />
+			<Property name="sumDuration(1)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(1)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(1)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(2)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum12()">
+		<PreConditions>
+			<Property name="totalDuration(1)" operator="=" value="True" />
+			<Property name="sumDuration(2)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(2)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(1)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(3)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum13()">
+		<PreConditions>
+			<Property name="totalDuration(1)" operator="=" value="True" />
+			<Property name="sumDuration(3)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(3)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(1)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum14()">
+		<PreConditions>
+			<Property name="totalDuration(1)" operator="=" value="True" />
+			<Property name="sumDuration(4)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(4)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(1)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(5)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum22()">
+		<PreConditions>
+			<Property name="totalDuration(2)" operator="=" value="True" />
+			<Property name="sumDuration(2)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(2)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(2)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum23()">
+		<PreConditions>
+			<Property name="totalDuration(2)" operator="=" value="True" />
+			<Property name="sumDuration(3)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(3)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(2)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(5)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum24()">
+		<PreConditions>
+			<Property name="totalDuration(2)" operator="=" value="True" />
+			<Property name="sumDuration(4)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(4)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(2)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(6)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum33()">
+		<PreConditions>
+			<Property name="totalDuration(3)" operator="=" value="True" />
+			<Property name="sumDuration(3)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(3)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(3)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(6)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum34()">
+		<PreConditions>
+			<Property name="totalDuration(3)" operator="=" value="True" />
+			<Property name="sumDuration(4)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(4)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(3)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(7)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSum44()">
+		<PreConditions>
+			<Property name="totalDuration(4)" operator="=" value="True" />
+			<Property name="sumDuration(4)" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration(4)" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="totalDuration(8)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceSumInv()">
+		<PreConditions>
+			<Property name="totalDuration([x])" operator="=" value="True" />
+			<Property name="sumDuration([y])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>
+			<Effect probability="1.0">
+				<Property name="sumDuration([y])" operator="=" value="False" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration([x])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="sumDuration([x])" operator="=" value="True" />
+			</Effect>			
+			<Effect probability="1.0">
+				<Property name="totalDuration([y])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodDurationSequence1()">
+		<PreConditions>
+			<Property name="totalDuration(4)" operator="=" value="True" />
+			<Property name="sumDuration([s])" operator="!=" value="True" />
+			<Property name="durationSequence([x])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([x])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodDurationSequence2()">
+		<PreConditions>
+			<Property name="totalDuration(4)" operator="=" value="True" />
+			<Property name="sumDuration([s])" operator="!=" value="True" />
+			<Property name="durationSequence([t1],[t2])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodDurationSequence3()">
+		<PreConditions>
+			<Property name="totalDuration(4)" operator="=" value="True" />
+			<Property name="sumDuration([s])" operator="!=" value="True" />
+			<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceGoodDurationSequence4()">
+		<PreConditions>
+			<Property name="totalDuration(4)" operator="=" value="True" />
+			<Property name="sumDuration([s])" operator="!=" value="True" />
+			<Property name="durationSequence([t1],[t2],[t3],[t4])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration(4)" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3],[t4])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="goodDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceBadDurationSequence1()">
+		<PreConditions>
+			<Property name="totalDuration([x])" operator="=" value="True" />
+			<Property name="sumDuration([y])" operator="!=" value="True" />
+			<Property name="[x]" operator="GreaterThan" value="4" />
+			<Property name="durationSequence([t1],[t2])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration([x])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceBadDurationSequence2()">
+		<PreConditions>
+			<Property name="totalDuration([x])" operator="=" value="True" />
+			<Property name="sumDuration([y])" operator="!=" value="True" />
+			<Property name="[x]" operator="GreaterThan" value="4" />
+			<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration([x])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+	<Action name="InferenceBadDurationSequence3()">
+		<PreConditions>
+			<Property name="totalDuration([x])" operator="=" value="True" />
+			<Property name="sumDuration([y])" operator="!=" value="True" />
+			<Property name="[x]" operator="GreaterThan" value="4" />
+			<Property name="durationSequence([t1],[t2],[t3],[t4])" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="totalDuration([x])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence([t1],[t2],[t3],[t4])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="badDurationSequence()" operator="=" value="True" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="durationSequence()" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+</DomainActions>

@@ -1,0 +1,136 @@
+<Character role="Bully" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
+	<EmotionalThresholds>
+		<EmotionalThreshold emotion="Love" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Hate" threshold="2" decay="5"/>
+		<EmotionalThreshold emotion="Hope" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Fear" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Satisfaction" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Relief" threshold="2" decay="5"/>
+		<EmotionalThreshold emotion="Fears-Confirmed" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Disappointment" threshold="2" decay="2"/>
+		<EmotionalThreshold emotion="Joy" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Distress" threshold="3" decay="2"/>
+		<EmotionalThreshold emotion="Happy-For" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Pitty" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Resentment" threshold="2" decay="2"/>
+		<EmotionalThreshold emotion="Gloating" threshold="1" decay="8"/>
+		<EmotionalThreshold emotion="Pride" threshold="1" decay="8"/>
+		<EmotionalThreshold emotion="Shame" threshold="5" decay="2"/>
+		<EmotionalThreshold emotion="Gratification" threshold="1" decay="5"/>
+		<EmotionalThreshold emotion="Remorse" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Admiration" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Reproach" threshold="1" decay="8"/>
+		<EmotionalThreshold emotion="Gratitude" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Anger" threshold="3" decay="8"/>
+	</EmotionalThresholds>
+	
+	<MotivationalParameters>
+		<!--<MotivationalParameter motivator="Affiliation" decayFactor="2" weight="0.04" intensity="4"/>
+		<MotivationalParameter motivator="Integrity" decayFactor="1" weight="0.065" intensity="6"/>
+		<MotivationalParameter motivator="Energy" decayFactor="2" weight="0.05" intensity="5"/>
+		<MotivationalParameter motivator="Certainty" decayFactor="3" weight="0.055" intensity="4"/>
+		<MotivationalParameter motivator="Competence" decayFactor="2" weight="0.065" intensity="6"/>-->
+
+
+		<MotivationalParameter hierarchy="Physiology" prepotency="5"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Food" decayFactor="2" weight="0.05" intensity="5"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Liquid" decayFactor="2" weight="0.05" intensity="4"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Rest" decayFactor="2" weight="0.05" intensity="4"/>
+		<MotivationalParameter hierarchy="Safety" prepotency="5"/>
+		<MotivationalParameter hierarchy="Safety" motivator="PhysiologicalSafety" decayFactor="1" weight="0.065" intensity="6"/>
+		<MotivationalParameter hierarchy="Safety" motivator="PsychologicalSafety" decayFactor="3" weight="0.055" intensity="6"/>
+		<MotivationalParameter hierarchy="Relationships" prepotency="7"/>
+		<MotivationalParameter hierarchy="Relationships" motivator="GiveLove" decayFactor="2" weight="0.04" intensity="7"/>
+		<MotivationalParameter hierarchy="Relationships" motivator="ReceiveLove" decayFactor="2" weight="0.04" intensity="6"/>
+		<MotivationalParameter hierarchy="Esteem" prepotency="7"/>
+		<MotivationalParameter hierarchy="Esteem" motivator="Achievement" decayFactor="2" weight="0.065" intensity="4"/>
+	</MotivationalParameters>
+
+	<Goals>
+	
+		<!--<Goal name="TalkingWithFriend([target])" importanceOfSuccess="4" importanceOfFailure="3"/>-->
+		<!-- General goals used in more than one episode -->
+		<Goal name="Eat([food])" importanceOfSuccess="4" importanceOfFailure="3" />
+		<Goal name="Drink([liquid])" importanceOfSuccess="5" importanceOfFailure="3" />
+		<Goal name="RestOn([target])" importanceOfSuccess="3" importanceOfFailure="2" />
+		<Goal name="Bully([target])" importanceOfSuccess="7" importanceOfFailure="5"/>
+		<Goal name="SpeechAct([target],mock)" importanceOfSuccess="6" importanceOfFailure="5"/>
+		<!--<Goal name="ReplyPositively([speaker],[question])" importanceOfSuccess="4" importanceOfFailure="3"/>
+		<Goal name="ReplyNegatively([speaker],[question])" importanceOfSuccess="4" importanceOfFailure="3"/>
+		<Goal name="ReplyPositivelyNoChoice([speaker],[question])" importanceOfSuccess="0" importanceOfFailure="4"/> -->
+		<!-- nao utilizado pois interest goals nao sao necessarios mais pois existe o modulo de necessidades -->
+		<!--<Goal name="AvoidGettingHarmed" importanceOfSuccess="2" importanceOfFailure="10"/>--> 
+		<!--<Goal name="ConfrontVictimTellTeacher([victim])" importanceOfSuccess="2" importanceOfFailure="2"/>
+		<Goal name="Bully([target])" importanceOfSuccess="6" importanceOfFailure="5"/>-->
+
+	</Goals>
+	
+	<InterpersonalRelations>
+		<Relation target="John" like="-5" respect="-1"/>
+	</InterpersonalRelations>
+	
+	<EventReactions>
+
+		<!-- General emotional reactions used in more than one episode -->
+
+		<!-- percebe que gosta de comer -->
+		<EmotionalReaction desirability="6" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="Eat" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que gosta de beber -->
+		<EmotionalReaction desirability="7" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="Drink" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que gosta de descansar -->
+		<EmotionalReaction desirability="5" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="RestOn" target="*"/>
+		</EmotionalReaction>
+		
+		<!-- percebe que gosta de ver outros chorarem -->
+		<EmotionalReaction desirability="6" desirabilityForOther="-8" praiseworthiness="-5"> 
+			<Event subject="*" action="Cry"/>
+		</EmotionalReaction>
+		
+		<!-- percebe que nao gosta de chorar -->
+		<EmotionalReaction desirability="-5" praiseworthiness="-5">
+			<Event subject="[SELF]" action="Cry"/>
+		</EmotionalReaction>
+		
+		<!-- percebe que gosta de realizar bullying -->
+		<EmotionalReaction desirability="10" desirabilityForOther="-5" praiseworthiness="6">
+			<Event subject="[SELF]" action="Bully" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que gosta de realizar mocking -->
+		<EmotionalReaction desirability="10" desirabilityForOther="-5" praiseworthiness="6">
+			<Event subject="[SELF]" action="SpeechAct" target="*" parameters="mock"/>
+		</EmotionalReaction>
+		
+		<!-- percebe que nao gosta de levar bullying -->
+		<EmotionalReaction desirability="-8" praiseworthiness="-7">
+			<Event subject="*" action="Bully" target="[SELF]"/>
+		</EmotionalReaction>
+
+		<!-- percebe que nao gosta de levar fightback -->
+		<EmotionalReaction desirability="-8" praiseworthiness="-7">
+			<Event subject="*" action="FightBack" target="[SELF]"/>
+		</EmotionalReaction>
+		
+	</EventReactions>
+	
+	<ActionTendencies>
+
+		<ActionTendency action="SpeechAct([Target],mock)">
+			<Preconditions>
+				<Property name="[Target](role)" operator="=" value="Victim" />
+            </Preconditions>
+			<ElicitingEmotion type="Distress" minIntensity="2">
+				<CauseEvent />
+			</ElicitingEmotion>
+		</ActionTendency>
+        
+	</ActionTendencies>
+</Character>

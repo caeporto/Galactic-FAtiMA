@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.launch.launchGroup">
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.0.action" value="DELAY"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.0.actionParam" value="5"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.0.enabled" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.0.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.0.name" value="WorldORIENTMaslow"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.1.action" value="NONE"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.1.enabled" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.1.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.1.name" value="ORIENTAbbukMaslow"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.2.action" value="NONE"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.2.enabled" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.2.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.2.name" value="ORIENTArdootMaslow"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.3.action" value="NONE"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.3.enabled" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.3.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.3.name" value="ORIENTCerkithMaslow"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.4.action" value="NONE"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.4.enabled" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.4.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.4.name" value="ORIENTIkopMaslow"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.5.action" value="NONE"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.5.enabled" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.5.mode" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.launchGroup.5.name" value="ORIENTTigritMaslow"/>
+</launchConfiguration>

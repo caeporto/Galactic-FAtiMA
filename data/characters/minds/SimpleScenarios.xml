@@ -1,0 +1,122 @@
+<Scenarios>
+	<Scenario name="SimpleScenario">
+		<WorldSimulator port="46874" scenery="Office" actionsFile="data/characters/minds/SimpleActions.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"	
+						simplifiedVersion="True">		
+			<Objects>
+				<Object name="apple"/>
+				<Object name="chocolate"/>
+				<Object name="User"/>	
+			</Objects>
+		</WorldSimulator>	
+		
+		<Agent name="Guilhas" displayName="Guilhas" role="Guilhas" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActions" 
+			   goalsFile="SimpleGoalLibrary" cultureName="SimpleCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+	</Scenario>
+	
+	<Scenario name="ScenarioWithDrives">
+		<WorldSimulator port="46874" scenery="Office" actionsFile="data/characters/minds/SimpleActionsWithDrives.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"
+						simplifiedVersion="True">		
+			<Objects>
+				<Object name="apple"/>
+				<Object name="chocolate"/>
+				<Object name="User"/>	
+			</Objects>
+		</WorldSimulator>	
+		
+		<Agent name="Luke" displayName="Luke" role="GuilhasDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrives" 
+			   goalsFile="SimpleGoalLibraryWithDrives" cultureName="SimpleCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,apple" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+		<Agent name="John" displayName="John" role="GuilhasDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrives" 
+			   goalsFile="SimpleGoalLibraryWithDrives" cultureName="SimpleCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,banana" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+		<Agent name="Paul" displayName="Paul" role="GuilhasDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrives" 
+			   goalsFile="SimpleGoalLibraryWithDrives" cultureName="SimpleCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,chocolate" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+		<Agent name="Sam" displayName="Sam" role="GuilhasDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrives" 
+			   goalsFile="SimpleGoalLibraryWithDrives" cultureName="SimpleCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,apple" value="True"/>
+				<Property name="has,banana" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+	</Scenario>	
+
+	<Scenario name="MaslowScenarioWithDrives">
+		<WorldSimulator port="46874" scenery="Office" actionsFile="data/characters/minds/SimpleActionsWithDrivesMaslow.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"
+						simplifiedVersion="True">		
+			<Objects>
+				<Object name="apple"/>
+				<Object name="chocolate"/>
+				<Object name="User"/>	
+			</Objects>
+		</WorldSimulator>
+		
+		<Agent name="Luke" displayName="Luke" role="MaslowDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrivesMaslow" 
+			   goalsFile="SimpleGoalLibraryWithDrivesMaslow" cultureName="SimpleMaslowCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,apple" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+		<Agent name="John" displayName="John" role="MaslowDrives" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SimpleActionsWithDrivesMaslow" 
+			   goalsFile="SimpleGoalLibraryWithDrivesMaslow" cultureName="SimpleMaslowCulture">
+			<Properties>				
+				<Property name="location" value="Office"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="has,banana" value="True"/>
+				<Property name="power" value="5"/>
+			</Properties>	
+		</Agent>
+	</Scenario>
+</Scenarios>

@@ -1,0 +1,502 @@
+
+LOAD: data/characters/minds/Actions-oldMaslow.xml
+
+LOAD: data/characters/minds/GoalLibrary-oldMaslow.xml
+
+LOADING Personality: data/characters/minds/roles/Bully/Bully.xml
+
+Connecting to localhost:46874
+
+Adding Reactive rules in the ReactiveComponent:
+
+Adding Goals in the DeliberativeComponent:
+
+LOADING Needs: 
+
+Physiology Motivator found: 0
+
+Physiology Motivator found: 1
+
+Physiology Motivator found: 2
+
+Safety Motivator found: 0
+
+Safety Motivator found: 1
+
+Relationships Motivator found: 0
+
+Relationships Motivator found: 1
+
+Esteem Motivator found: 0
+
+LOADING Social Relations:
+
+LOADING GeneralMemory Conditions: 
+
+LOADING EI Operators: 
+
+LOADING Culture: data/characters/minds/NoCulture.xml
+
+Adding Reactive Empathic Actions in the EmpathyComponent:
+
+Reporting property changed: PROPERTY-CHANGED Luke(facial-exp)NEUTRAL
+
+Luke: Processing message: AGENTS Luke cheeseburger coke couch user
+
+Sending Look-AT: Luke
+
+Sending Look-AT: cheeseburger
+
+Sending Look-AT: coke
+
+Sending Look-AT: couch
+
+Sending Look-AT: user
+
+Luke: Processing message: ENTITY-ADDED John
+
+Sending Look-AT: John
+
+Luke: Processing message: LOOK-AT Luke role:Bully sex:M name:Luke location:School time:Morning power:8 isPerson:True 
+
+PropertyChanged: * SELF(role) Bully
+
+PropertyChanged: * SELF(role) Bully
+
+Look-At:Luke role Bully
+
+PropertyChanged: * SELF(sex) M
+
+PropertyChanged: * SELF(sex) M
+
+Look-At:Luke sex M
+
+PropertyChanged: * SELF(name) Luke
+
+PropertyChanged: * SELF(name) Luke
+
+Look-At:Luke name Luke
+
+PropertyChanged: * SELF(location) School
+
+PropertyChanged: * SELF(location) School
+
+Look-At:Luke location School
+
+PropertyChanged: * SELF(time) Morning
+
+PropertyChanged: * SELF(time) Morning
+
+Look-At:Luke time Morning
+
+PropertyChanged: * SELF(power) 8
+
+PropertyChanged: * SELF(power) 8
+
+Look-At:Luke power 8
+
+PropertyChanged: * SELF(isPerson) True
+
+PropertyChanged: * SELF(isPerson) True
+
+Look-At:Luke isPerson True
+
+Reporting property changed: PROPERTY-CHANGED Luke(role)Bully
+
+Reporting property changed: PROPERTY-CHANGED Luke(sex)M
+
+Reporting property changed: PROPERTY-CHANGED Luke(name)Luke
+
+Reporting property changed: PROPERTY-CHANGED Luke(location)School
+
+Reporting property changed: PROPERTY-CHANGED Luke(time)Morning
+
+Reporting property changed: PROPERTY-CHANGED Luke(power)8
+
+Reporting property changed: PROPERTY-CHANGED Luke(isPerson)True
+
+Luke: Processing message: ACTION-FINISHED Luke look-at Luke
+
+appraising event: EVENT(Luke,look-at,Luke)
+
+Luke: Processing message: LOOK-AT cheeseburger eatable:True onGround:True availability:True type:object 
+
+PropertyChanged: * cheeseburger(eatable) True
+
+PropertyChanged: * cheeseburger(eatable) True
+
+Look-At:cheeseburger eatable True
+
+PropertyChanged: * cheeseburger(onGround) True
+
+PropertyChanged: * cheeseburger(onGround) True
+
+Look-At:cheeseburger onGround True
+
+PropertyChanged: * cheeseburger(availability) True
+
+PropertyChanged: * cheeseburger(availability) True
+
+Look-At:cheeseburger availability True
+
+PropertyChanged: * cheeseburger(type) object
+
+PropertyChanged: * cheeseburger(type) object
+
+Look-At:cheeseburger type object
+
+Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
+
+Reporting property changed: PROPERTY-CHANGED Luke()0.0
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.9209037 Competence: 0.6929281 Urgency: 0.0 Total: 2.023976
+
+Adding 1st level intention: Eat(cheeseburger)
+
+Adding a new Intention: Eat(cheeseburger)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Eat(cheeseburger)
+
+appraising event: EVENT(Luke,look-at,cheeseburger)
+
+Luke: Processing message: LOOK-AT coke drinkable:True availability:True type:object 
+
+PropertyChanged: * coke(drinkable) True
+
+PropertyChanged: * coke(drinkable) True
+
+Look-At:coke drinkable True
+
+PropertyChanged: * coke(availability) True
+
+PropertyChanged: * coke(availability) True
+
+Look-At:coke availability True
+
+PropertyChanged: * coke(type) object
+
+PropertyChanged: * coke(type) object
+
+Look-At:coke type object
+
+Luke: Processing message: ACTION-FINISHED Luke look-at coke
+
+appraising event: EVENT(Luke,look-at,coke)
+
+Luke: Processing message: ACTION-FINISHED John look-at Luke
+
+Luke: Processing message: LOOK-AT couch canRest:True type:object 
+
+PropertyChanged: * couch(canRest) True
+
+PropertyChanged: * couch(canRest) True
+
+Look-At:couch canRest True
+
+PropertyChanged: * couch(type) object
+
+PropertyChanged: * couch(type) object
+
+Look-At:couch type object
+
+appraising event: EVENT(John,look-at,Luke)
+
+Luke: Processing message: ACTION-FINISHED Luke look-at couch
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Sending action for execution: Eat cheeseburger
+
+Cannot act now!
+
+appraising event: EVENT(Luke,look-at,couch)
+
+Luke: Processing message: ACTION-FINISHED John look-at John
+
+appraising event: EVENT(John,look-at,John)
+
+Luke: Processing message: LOOK-AT user isPerson:True power:10 type:character 
+
+PropertyChanged: * user(isPerson) True
+
+PropertyChanged: * user(isPerson) True
+
+Look-At:user isPerson True
+
+PropertyChanged: * user(power) 10
+
+PropertyChanged: * user(power) 10
+
+Look-At:user power 10
+
+PropertyChanged: * user(type) character
+
+PropertyChanged: * user(type) character
+
+Look-At:user type character
+
+Luke: Processing message: ACTION-FINISHED Luke look-at user
+
+appraising event: EVENT(Luke,look-at,user)
+
+Luke: Processing message: ACTION-FINISHED John look-at cheeseburger
+
+appraising event: EVENT(John,look-at,cheeseburger)
+
+Luke: Processing message: LOOK-AT John role:Victim sex:M name:John location:School time:Morning power:4 isPerson:True 
+
+PropertyChanged: * John(role) Victim
+
+PropertyChanged: * John(role) Victim
+
+Look-At:John role Victim
+
+PropertyChanged: * John(sex) M
+
+PropertyChanged: * John(sex) M
+
+Look-At:John sex M
+
+PropertyChanged: * John(name) John
+
+PropertyChanged: * John(name) John
+
+Look-At:John name John
+
+PropertyChanged: * John(location) School
+
+PropertyChanged: * John(location) School
+
+Look-At:John location School
+
+PropertyChanged: * John(time) Morning
+
+PropertyChanged: * John(time) Morning
+
+Look-At:John time Morning
+
+PropertyChanged: * John(power) 4
+
+PropertyChanged: * John(power) 4
+
+Look-At:John power 4
+
+PropertyChanged: * John(isPerson) True
+
+PropertyChanged: * John(isPerson) True
+
+Look-At:John isPerson True
+
+Luke: Processing message: ACTION-FINISHED Luke look-at John
+
+appraising event: EVENT(Luke,look-at,John)
+
+Luke: Processing message: ACTION-FINISHED John look-at coke
+
+appraising event: EVENT(John,look-at,coke)
+
+Luke: Processing message: ACTION-FINISHED John look-at couch
+
+appraising event: EVENT(John,look-at,couch)
+
+Luke: Processing message: ACTION-FINISHED John look-at user
+
+appraising event: EVENT(John,look-at,user)
+
+Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
+
+PropertyChanged: * Luke(eatenFood) True
+
+Reporting property changed: PROPERTY-CHANGED Luke(eatenFood)True
+
+Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
+
+PropertyChanged: * Luke(eatenFood) True
+
+Luke: Processing message: ACTION-FINISHED Luke Eat cheeseburger
+
+can act now!
+
+appraising event: EVENT(Luke,Eat,cheeseburger)
+
+Updating motivator Food
+
+Updating motivator PhysiologicalSafety
+
+Adding 1st level intention: Drink(coke)
+
+Adding a new Intention: Drink(coke)
+
+Adding 1st level intention: RestOn(couch)
+
+Adding a new Intention: RestOn(couch)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Drink(coke)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Drink(coke)]
+
+Selecting Action: SELF:Drink(coke)from plan:Plan P=1.0 Steps: [SELF:Drink(coke)]
+
+Sending action for execution: Drink coke
+
+Cannot act now!
+
+Goal: Bully(John) CulturalUtilitity: 1.0136942 Competence: 0.7685431 Urgency: 1.0 Total: 1.5476109
+
+Luke: Processing message: PROPERTY-CHANGED * John(eatenFood) True
+
+PropertyChanged: * John(eatenFood) True
+
+Luke: Processing message: PROPERTY-CHANGED * John(eatenFood) True
+
+PropertyChanged: * John(eatenFood) True
+
+Luke: Processing message: ACTION-FINISHED John Eat cheeseburger
+
+appraising event: EVENT(John,Eat,cheeseburger)
+
+Updating motivator Food
+
+Updating motivator PhysiologicalSafety
+
+Goal: Bully(John) CulturalUtilitity: 1.175802 Competence: 0.7685431 Urgency: 1.0 Total: 1.6721977
+
+Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
+
+PropertyChanged: * Luke(drankLiquid) True
+
+Reporting property changed: PROPERTY-CHANGED Luke(drankLiquid)True
+
+Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
+
+PropertyChanged: * Luke(drankLiquid) True
+
+Luke: Processing message: ACTION-FINISHED Luke Drink coke
+
+can act now!
+
+appraising event: EVENT(Luke,Drink,coke)
+
+Updating motivator Liquid
+
+Updating motivator PhysiologicalSafety
+
+Adding 1st level intention: Bully(John)
+
+Adding a new Intention: Bully(John)
+
+Adding 1st level intention: SpeechAct(John,mock)
+
+Adding a new Intention: SpeechAct(John,mock)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Bully(John)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Bully(John)]
+
+Selecting Action: SELF:Bully(John)from plan:Plan P=1.0 Steps: [SELF:Bully(John)]
+
+Sending action for execution: Bully John
+
+Cannot act now!
+
+Goal: RestOn(couch) CulturalUtilitity: 1.6734247 Competence: 0.8260049 Urgency: 0.0 Total: 1.3822571
+
+Luke: Processing message: ACTION-FINISHED Luke Bully John
+
+can act now!
+
+appraising event: EVENT(Luke,Bully,John)
+
+Updating motivator ReceiveLove
+
+Updating motivator PhysiologicalSafety
+
+Updating motivator GiveLove
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Sending action for execution: RestOn couch
+
+Cannot act now!
+
+Luke: Processing message: PROPERTY-CHANGED * John(drankLiquid) True
+
+PropertyChanged: * John(drankLiquid) True
+
+Luke: Processing message: PROPERTY-CHANGED * John(drankLiquid) True
+
+PropertyChanged: * John(drankLiquid) True
+
+Luke: Processing message: ACTION-FINISHED John Drink coke
+
+appraising event: EVENT(John,Drink,coke)
+
+Updating motivator Liquid
+
+Updating motivator PhysiologicalSafety
+
+Luke: Processing message: ACTION-FINISHED John FightBack Luke
+
+appraising event: EVENT(John,FightBack,Luke)
+
+Updating motivator PhysiologicalSafety
+
+Luke: Processing message: ACTION-FINISHED Luke RestOn couch
+
+can act now!
+
+appraising event: EVENT(Luke,RestOn,couch)
+
+Updating motivator Rest
+
+Updating motivator PhysiologicalSafety
+
+Goal: SpeechAct(John,mock) CulturalUtilitity: 0.08547769 Competence: 0.9012084 Urgency: 0.0 Total: 0.07703321
+
+Luke: Processing message: ACTION-FINISHED John Cry
+
+appraising event: EVENT(John,Cry)
+
+Luke: Processing message: ACTION-FINISHED John RestOn couch
+
+appraising event: EVENT(John,RestOn,couch)
+
+Updating motivator Rest
+
+Updating motivator PhysiologicalSafety
+
+Adding 1st level intention: RestOn(couch)
+
+Adding a new Intention: RestOn(couch)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Sending action for execution: RestOn couch
+
+Cannot act now!
+
+Goal: SpeechAct(John,mock) CulturalUtilitity: 0.09340557 Competence: 0.8972163 Urgency: 0.0 Total: 0.083805
+
+Luke: Processing message: ACTION-FINISHED Luke RestOn couch
+
+can act now!
+
+appraising event: EVENT(Luke,RestOn,couch)
+
+Updating motivator Rest
+
+Updating motivator PhysiologicalSafety
+
+Goal: SpeechAct(John,mock) CulturalUtilitity: 0.059105266 Competence: 0.9197907 Urgency: 0.0 Total: 0.054364473
+
+Goal: RestOn(couch) CulturalUtilitity: 0.33189142 Competence: 0.9164458 Urgency: 0.0 Total: 0.3041605

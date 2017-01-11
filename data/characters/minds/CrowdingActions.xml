@@ -1,0 +1,31 @@
+<DomainActions>
+	<Action name="Grab([target])">
+		<PreConditions>
+			<Property name="[AGENT]" operator="!=" value="[target]" />
+			<Property name="[target](onTree)" operator="=" value="True"/>
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="[target](onTree)" operator="=" value="False"/>
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="[AGENT](has,[target])" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+
+	<Action name="Drink([target])">
+		<PreConditions>
+			<Property name="[AGENT]" operator="!=" value="[target]" />
+			<Property name="[AGENT](has,[target])" operator="=" value="True" />
+		</PreConditions>
+		<Effects>	
+			<Effect probability="1.0">
+				<Property name="[AGENT](has,[target])" operator="=" value="False" />
+			</Effect>
+			<Effect probability="1.0">
+				<Property name="[target](isEmpty)" operator="=" value="True" />
+			</Effect>
+		</Effects>
+	</Action>
+</DomainActions>

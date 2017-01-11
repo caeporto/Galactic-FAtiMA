@@ -1,0 +1,24 @@
+
+LOAD: data/characters/minds/Actions-backup.xml
+
+LOAD: data/characters/minds/GoalLibrary-backup.xml
+
+LOADING Personality: data/characters/minds/roles/Bully/Bully.xml
+
+Connecting to localhost:46874
+
+Adding Reactive rules in the ReactiveComponent:
+
+Adding Goals in the DeliberativeComponent:
+
+LOADING Needs: 
+
+Motivator found: 0
+
+Motivator found: 1
+
+Motivator found: 2
+
+Motivator found: 3
+
+Motivator found: 4

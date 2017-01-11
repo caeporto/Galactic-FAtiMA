@@ -1,0 +1,3 @@
+isActivity True
+isGround True
+type activity

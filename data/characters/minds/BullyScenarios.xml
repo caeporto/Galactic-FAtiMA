@@ -1,0 +1,37 @@
+<Scenarios>	
+	<Scenario name="BullyScenario">
+		<WorldSimulator port="46874" scenery="School" actionsFile="data/characters/minds/Actions-old.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"
+						simplifiedVersion="True">		
+			<Objects>
+				<Object name="cheeseburger"/>
+				<Object name="coke"/>
+				<Object name="couch"/>
+				<Object name="user"/>	
+			</Objects>
+		</WorldSimulator>
+		
+		<Agent name="Luke" displayName="Luke" role="Bully" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="Actions-old" 
+			   goalsFile="GoalLibrary-old" cultureName="NoCulture">
+			<Properties>				
+				<Property name="location" value="School"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="power" value="8"/>
+			</Properties>	
+		</Agent>
+		<Agent name="John" displayName="John" role="Victim" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="Actions-old" 
+			   goalsFile="GoalLibrary-old" cultureName="NoCulture">
+			<Properties>				
+				<Property name="location" value="School"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+				<Property name="power" value="4"/>
+			</Properties>	
+		</Agent>
+	</Scenario>
+</Scenarios>

@@ -1,0 +1,4 @@
+eatable True
+onGround True
+availability True
+type object

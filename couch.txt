@@ -1,0 +1,2 @@
+canRest True
+type object

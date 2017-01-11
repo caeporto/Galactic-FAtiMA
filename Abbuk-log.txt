@@ -1,0 +1,514 @@
+
+LOAD: data/characters/minds/ActionsMaslow.xml
+
+LOAD: data/characters/minds/GoalLibraryMaslow.xml
+
+LOADING Personality: data/characters/minds/roles/Abbuk/Abbuk.xml
+
+Connecting to localhost:46874
+
+Adding Reactive rules in the ReactiveComponent:
+
+Adding Goals in the DeliberativeComponent:
+
+LOADING Needs: 
+
+Physiology Motivator found: 0
+
+Physiology Motivator found: 1
+
+Physiology Motivator found: 2
+
+Safety Motivator found: 0
+
+Safety Motivator found: 1
+
+Relationships Motivator found: 0
+
+Relationships Motivator found: 1
+
+Esteem Motivator found: 0
+
+LOADING Social Relations:
+
+LOADING GeneralMemory Conditions: 
+
+LOADING EI Operators: 
+
+LOADING Culture: data/characters/minds/SpryteCulture.xml
+
+Adding Reactive Empathic Actions in the EmpathyComponent:
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(facial-exp)NEUTRAL
+
+Goal: Rest(SELF) CulturalUtilitity: 1.6075065 Competence: 0.9410894 Urgency: 0.0 Total: 1.5128074
+
+Adding 1st level intention: Rest(SELF)
+
+Adding a new Intention: Rest(SELF)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Rest(SELF)
+
+Abbuk: Processing message: AGENTS Abbuk user cinema beach meal water cheeseburger
+
+Sending Look-AT: Abbuk
+
+Sending Look-AT: user
+
+Sending Look-AT: cinema
+
+Sending Look-AT: beach
+
+Sending Look-AT: meal
+
+Sending Look-AT: water
+
+Sending Look-AT: cheeseburger
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Rest(SELF)]
+
+Selecting Action: SELF:Rest(SELF)from plan:Plan P=1.0 Steps: [SELF:Rest(SELF)]
+
+Sending action for execution: Rest Abbuk
+
+Cannot act now!
+
+Abbuk: Processing message: LOOK-AT Abbuk role:Abbuk hasInvitation:False pose:standing onScene:True sex:M isSeated:False type:character isPerson:True host:False name:Abbuk place:party-spot power:10 time:noon 
+
+PropertyChanged: * SELF(role) Abbuk
+
+PropertyChanged: * SELF(role) Abbuk
+
+Look-At:Abbuk role Abbuk
+
+PropertyChanged: * SELF(hasInvitation) False
+
+PropertyChanged: * SELF(hasInvitation) False
+
+Look-At:Abbuk hasInvitation False
+
+PropertyChanged: * SELF(pose) standing
+
+PropertyChanged: * SELF(pose) standing
+
+Look-At:Abbuk pose standing
+
+PropertyChanged: * SELF(onScene) True
+
+PropertyChanged: * SELF(onScene) True
+
+Look-At:Abbuk onScene True
+
+PropertyChanged: * SELF(sex) M
+
+PropertyChanged: * SELF(sex) M
+
+Look-At:Abbuk sex M
+
+PropertyChanged: * SELF(isSeated) False
+
+PropertyChanged: * SELF(isSeated) False
+
+Look-At:Abbuk isSeated False
+
+PropertyChanged: * SELF(type) character
+
+PropertyChanged: * SELF(type) character
+
+Look-At:Abbuk type character
+
+PropertyChanged: * SELF(isPerson) True
+
+PropertyChanged: * SELF(isPerson) True
+
+Look-At:Abbuk isPerson True
+
+PropertyChanged: * SELF(host) False
+
+PropertyChanged: * SELF(host) False
+
+Look-At:Abbuk host False
+
+PropertyChanged: * SELF(name) Abbuk
+
+PropertyChanged: * SELF(name) Abbuk
+
+Look-At:Abbuk name Abbuk
+
+PropertyChanged: * SELF(place) party-spot
+
+PropertyChanged: * SELF(place) party-spot
+
+Look-At:Abbuk place party-spot
+
+PropertyChanged: * SELF(power) 10
+
+PropertyChanged: * SELF(power) 10
+
+Look-At:Abbuk power 10
+
+PropertyChanged: * SELF(time) noon
+
+PropertyChanged: * SELF(time) noon
+
+Look-At:Abbuk time noon
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(role)Abbuk
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(hasInvitation)False
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(pose)standing
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(onScene)True
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(sex)M
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(isSeated)False
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(type)character
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(isPerson)True
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(host)False
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(name)Abbuk
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(place)party-spot
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(power)10
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(time)noon
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at Abbuk
+
+appraising event: EVENT(Abbuk,look-at,Abbuk)
+
+Abbuk: Processing message: LOOK-AT user isPerson:True power:10 type:character 
+
+PropertyChanged: * user(isPerson) True
+
+PropertyChanged: * user(isPerson) True
+
+Look-At:user isPerson True
+
+PropertyChanged: * user(power) 10
+
+PropertyChanged: * user(power) 10
+
+Look-At:user power 10
+
+PropertyChanged: * user(type) character
+
+PropertyChanged: * user(type) character
+
+Look-At:user type character
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at user
+
+Reporting property changed: PROPERTY-CHANGED Abbuk()0.0
+
+appraising event: EVENT(Abbuk,look-at,user)
+
+Abbuk: Processing message: LOOK-AT cinema isActivity:True type:activity 
+
+PropertyChanged: * cinema(isActivity) True
+
+PropertyChanged: * cinema(isActivity) True
+
+Look-At:cinema isActivity True
+
+PropertyChanged: * cinema(type) activity
+
+PropertyChanged: * cinema(type) activity
+
+Look-At:cinema type activity
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at cinema
+
+appraising event: EVENT(Abbuk,look-at,cinema)
+
+Abbuk: Processing message: LOOK-AT beach isActivity:True isGround:True type:activity 
+
+PropertyChanged: * beach(isActivity) True
+
+PropertyChanged: * beach(isActivity) True
+
+Look-At:beach isActivity True
+
+PropertyChanged: * beach(isGround) True
+
+PropertyChanged: * beach(isGround) True
+
+Look-At:beach isGround True
+
+PropertyChanged: * beach(type) activity
+
+PropertyChanged: * beach(type) activity
+
+Look-At:beach type activity
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at beach
+
+appraising event: EVENT(Abbuk,look-at,beach)
+
+Abbuk: Processing message: LOOK-AT meal isActivity:True type:activity 
+
+PropertyChanged: * meal(isActivity) True
+
+PropertyChanged: * meal(isActivity) True
+
+Look-At:meal isActivity True
+
+PropertyChanged: * meal(type) activity
+
+PropertyChanged: * meal(type) activity
+
+Look-At:meal type activity
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at meal
+
+appraising event: EVENT(Abbuk,look-at,meal)
+
+Abbuk: Processing message: LOOK-AT water drinkable:True availability:True type:object 
+
+PropertyChanged: * water(drinkable) True
+
+PropertyChanged: * water(drinkable) True
+
+Look-At:water drinkable True
+
+PropertyChanged: * water(availability) True
+
+PropertyChanged: * water(availability) True
+
+Look-At:water availability True
+
+PropertyChanged: * water(type) object
+
+PropertyChanged: * water(type) object
+
+Look-At:water type object
+
+Adding 1st level intention: Drink(water)
+
+Adding a new Intention: Drink(water)
+
+Switching 2nd level intention from Intention: ActivePursuitGoal: Rest(SELF) to Intention: ActivePursuitGoal: Drink(water)
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at water
+
+appraising event: EVENT(Abbuk,look-at,water)
+
+Abbuk: Processing message: LOOK-AT cheeseburger eatable:True onGround:True availability:True type:object 
+
+PropertyChanged: * cheeseburger(eatable) True
+
+PropertyChanged: * cheeseburger(eatable) True
+
+Look-At:cheeseburger eatable True
+
+PropertyChanged: * cheeseburger(onGround) True
+
+PropertyChanged: * cheeseburger(onGround) True
+
+Look-At:cheeseburger onGround True
+
+PropertyChanged: * cheeseburger(availability) True
+
+PropertyChanged: * cheeseburger(availability) True
+
+Look-At:cheeseburger availability True
+
+PropertyChanged: * cheeseburger(type) object
+
+PropertyChanged: * cheeseburger(type) object
+
+Look-At:cheeseburger type object
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk look-at cheeseburger
+
+appraising event: EVENT(Abbuk,look-at,cheeseburger)
+
+Goal: Drink(water) CulturalUtilitity: 2.6064281 Competence: 1.0 Urgency: 0.0 Total: 2.6064281
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.300276 Competence: 0.9377936 Urgency: 0.0 Total: 2.1571841
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk Rest Abbuk
+
+can act now!
+
+appraising event: EVENT(Abbuk,Rest,Abbuk)
+
+Updating motivator Rest
+
+Updating motivator PhysiologicalSafety
+
+Reporting property changed: PROPERTY-CHANGED Abbuk()0.0
+
+Adding 1st level intention: Eat(cheeseburger)
+
+Adding a new Intention: Eat(cheeseburger)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Drink(water)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Drink(water)]
+
+Selecting Action: SELF:Drink(water)from plan:Plan P=1.0 Steps: [SELF:Drink(water)]
+
+Sending action for execution: Drink water
+
+Cannot act now!
+
+Goal: AttendTo(user) CulturalUtilitity: 0.46306637 Competence: 0.9533452 Urgency: 1.0 Total: 1.3948072
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk Drink water
+
+can act now!
+
+appraising event: EVENT(Abbuk,Drink,water)
+
+Updating motivator Liquid
+
+Updating motivator PhysiologicalSafety
+
+Adding 1st level intention: AttendTo(user)
+
+Adding a new Intention: AttendTo(user)
+
+Adding 1st level intention: Socialise(user)
+
+Adding a new Intention: Socialise(user)
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Eat(cheeseburger)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Sending action for execution: Eat cheeseburger
+
+Cannot act now!
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 1.4753671 Competence: 1.0 Urgency: 0.0 Total: 1.4753671
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk Eat cheeseburger
+
+can act now!
+
+appraising event: EVENT(Abbuk,Eat,cheeseburger)
+
+Updating motivator Food
+
+Updating motivator PhysiologicalSafety
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: AttendTo(user)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:AttendTo(user)]
+
+Selecting Action: SELF:AttendTo(user)from plan:Plan P=1.0 Steps: [SELF:AttendTo(user)]
+
+Sending action for execution: AttendTo user
+
+Cannot act now!
+
+Goal: Socialise(user) CulturalUtilitity: 0.9768394 Competence: 0.9719386 Urgency: 0.0 Total: 0.94942796
+
+Abbuk: Processing message: PROPERTY-CHANGED * Abbuk(look-at,user) True
+
+PropertyChanged: * Abbuk(look-at,user) True
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(look-at,user)True
+
+Adding 1st level intention: Greet(user)
+
+Adding a new Intention: Greet(user)
+
+Switching 2nd level intention from Intention: ActivePursuitGoal: AttendTo(user) to Intention: ActivePursuitGoal: Greet(user)
+
+Abbuk: Processing message: PROPERTY-CHANGED * Abbuk(look-at,user) True
+
+PropertyChanged: * Abbuk(look-at,user) True
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk AttendTo user
+
+can act now!
+
+appraising event: EVENT(Abbuk,AttendTo,user)
+
+Updating motivator ReceiveLove
+
+Updating motivator GiveLove
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Greet(user)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:GreetGesture(user)]
+
+Selecting Action: SELF:GreetGesture(user)from plan:Plan P=1.0 Steps: [SELF:GreetGesture(user)]
+
+Sending action for execution: GreetGesture user
+
+Cannot act now!
+
+Goal: Greet(user) CulturalUtilitity: 0.54828787 Competence: 1.0 Urgency: 1.0 Total: 1.5482879
+
+Abbuk: Processing message: PROPERTY-CHANGED * Abbuk(greetCorrectly,user) True
+
+PropertyChanged: * Abbuk(greetCorrectly,user) True
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(greetCorrectly,user)True
+
+Abbuk: Processing message: PROPERTY-CHANGED * Abbuk(greetCorrectly,user) True
+
+PropertyChanged: * Abbuk(greetCorrectly,user) True
+
+Abbuk: Processing message: ACTION-FINISHED Abbuk GreetGesture user
+
+can act now!
+
+appraising event: EVENT(Abbuk,GreetGesture,user)
+
+Updating motivator ReceiveLove
+
+Updating motivator GiveLove
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.006159394 Competence: 0.9826573 Urgency: 0.0 Total: 0.0060525737
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.007307565 Competence: 0.98145217 Urgency: 0.0 Total: 0.0071720253
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.00995798 Competence: 0.979051 Urgency: 0.0 Total: 0.009749371
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.011458535 Competence: 0.97785485 Urgency: 0.0 Total: 0.011204784
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.014806115 Competence: 0.9754715 Urgency: 0.0 Total: 0.014442943
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.01665142 Competence: 0.9742843 Urgency: 0.0 Total: 0.016223216
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.02068097 Competence: 0.9719188 Urgency: 0.0 Total: 0.020100223
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.02286359 Competence: 0.97074044 Urgency: 0.0 Total: 0.02219461
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.027560422 Competence: 0.96839267 Urgency: 0.0 Total: 0.026689311
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.030072872 Competence: 0.96722317 Urgency: 0.0 Total: 0.029087178
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.03542222 Competence: 0.96489286 Urgency: 0.0 Total: 0.03417865
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.038257465 Competence: 0.96373206 Urgency: 0.0 Total: 0.036869947
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.04424507 Competence: 0.9614192 Urgency: 0.0 Total: 0.04253806
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.04739599 Competence: 0.9602671 Urgency: 0.0 Total: 0.04551281
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 0.050650485 Competence: 0.9591178 Urgency: 0.0 Total: 0.048579782
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: Socialise(user)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:SpeechAct(user,chat)]
+
+Selecting Action: SELF:SpeechAct(user,chat)from plan:Plan P=1.0 Steps: [SELF:SpeechAct(user,chat)]
+
+Sending action for execution: say <SpeechAct type="SpeechAct"><Sender>Abbuk</Sender><Receiver>user</Receiver><Type>chat</Type><Context id="me">Abbuk</Context><Context id="you">user</Context><Context id="sex">m</Context><Context id="me">Abbuk</Context><Context id="role">abbuk</Context><Parameters></Parameters><Camera></Camera></SpeechAct>
+
+Cannot act now!
+
+Reporting property changed: PROPERTY-CHANGED Abbuk(role)Abbuk

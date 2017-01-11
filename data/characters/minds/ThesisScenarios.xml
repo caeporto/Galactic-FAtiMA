@@ -1,0 +1,84 @@
+<Scenarios>
+	<Scenario name="BullyScenario">
+		<WorldSimulator port="46874" scenery="Office" actionsFile="data/characters/minds/Actions-backup.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"	
+						simplifiedVersion="True">
+						<!--graphicalVersion="True"-->		
+			<Objects>
+				<Object name="book"/>	
+				<Object name="User"/>	
+			</Objects>
+		</WorldSimulator>	
+		
+		<Agent name="Gustavo" displayName="Gustavo" role="Bully" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="Actions-backup" 
+			   goalsFile="GoalLibrary-backup">
+			<Properties>	
+				<!--<Property name="pos" value="(0,0)"> activated only if graphicalversion is true-->			
+				<Property name="location" value="Classroom"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+
+		<Agent name="Rafael" displayName="Rafael" role="Victim" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="Actions-backup" 
+			   goalsFile="SoberGoalLibrary">
+			<Properties>				
+				<!--<Property name="pos" value="(0,0)"> activated only if graphicalversion is true-->			
+				<Property name="location" value="Classroom"/>
+				<Property name="time" value="Morning"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+	</Scenario>
+
+	<Scenario name="DrunkScenario">
+		<WorldSimulator port="46874" scenery="Office" actionsFile="data/characters/minds/SimpleActions.xml" 
+						agentLanguageFile="data/characters/minds/language/agent/en/language-set-1"
+						userLanguageFile="data/characters/minds/language/user/en/language-set-1" 
+						userOptionsFile="OptionsSimpleScenario"	
+						simplifiedVersion="True">
+						<!--graphicalVersion="True"-->		
+			<Objects>
+				<Object name="car"/>
+				<Object name="User"/>	
+			</Objects>
+		</WorldSimulator>	
+		
+		<Agent name="Gustavo" displayName="Motorista" role="Drunk" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="DrunkActions" 
+			   goalsFile="DrunkGoalLibrary">
+			<Properties>	
+				<!--<Property name="pos" value="(0,0)"> activated only if graphicalversion is true-->			
+				<Property name="location" value="Car"/>
+				<Property name="time" value="Night"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+
+		<Agent name="Rafael" displayName="Passageiro" role="Sober" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="SoberActions" 
+			   goalsFile="SoberGoalLibrary">
+			<Properties>				
+				<!--<Property name="pos" value="(0,0)"> activated only if graphicalversion is true-->			
+				<Property name="location" value="Car"/>
+				<Property name="time" value="Night"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+
+		<Agent name="Evandro" displayName="Guarda" role="Officer" platform="worldsim" host="localhost" 
+			   port="46874" displayMode="True" sex="M" actionsFile="OfficerActions" 
+			   goalsFile="OfficerGoalLibrary">
+			<Properties>		
+				<!--<Property name="pos" value="(2,3)"> activated only if graphicalversion is true-->					
+				<Property name="location" value="Car"/>
+				<Property name="time" value="Night"/>
+				<Property name="isPerson" value="True"/>
+			</Properties>	
+		</Agent>
+	</Scenario>
+</Scenarios>

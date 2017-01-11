@@ -1,0 +1,145 @@
+<Character role="Victim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
+	
+	<EmotionalThresholds>
+		<EmotionalThreshold emotion="Love" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Hate" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Hope" threshold="4" decay="8"/>
+		<EmotionalThreshold emotion="Fear" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Satisfaction" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Relief" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Fears-Confirmed" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Disappointment" threshold="2" decay="5"/>
+		<EmotionalThreshold emotion="Joy" threshold="3" decay="2"/>
+		<EmotionalThreshold emotion="Distress" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Happy-For" threshold="2" decay="5"/>
+		<EmotionalThreshold emotion="Pitty" threshold="2" decay="2"/>
+		<EmotionalThreshold emotion="Resentment" threshold="3" decay="2"/>
+		<EmotionalThreshold emotion="Gloating" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Pride" threshold="5" decay="5"/>
+		<EmotionalThreshold emotion="Shame" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Gratification" threshold="5" decay="8"/>
+		<EmotionalThreshold emotion="Remorse" threshold="1" decay="2"/>
+		<EmotionalThreshold emotion="Admiration" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Reproach" threshold="2" decay="8"/>
+		<EmotionalThreshold emotion="Gratitude" threshold="3" decay="5"/>
+		<EmotionalThreshold emotion="Anger" threshold="3" decay="5"/>
+	</EmotionalThresholds>
+	
+	<MotivationalParameters>
+		<!--<MotivationalParameter motivator="Affiliation" decayFactor="2" weight="0.075" intensity="6"/>
+		<MotivationalParameter motivator="Integrity" decayFactor="1.5" weight="0.05" intensity="4"/>
+		<MotivationalParameter motivator="Energy" decayFactor="2" weight="0.055" intensity="5"/>
+		<MotivationalParameter motivator="Certainty" decayFactor="4" weight="0.065" intensity="4"/>
+		<MotivationalParameter motivator="Competence" decayFactor="3" weight="0.05" intensity="4"/>-->
+
+		<MotivationalParameter hierarchy="Physiology" prepotency="5"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Food" decayFactor="2" weight="0.055" intensity="5"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Liquid" decayFactor="2" weight="0.055" intensity="5"/>
+		<MotivationalParameter hierarchy="Physiology" motivator="Rest" decayFactor="2" weight="0.055" intensity="5"/>
+		<MotivationalParameter hierarchy="Safety" prepotency="5"/>
+		<MotivationalParameter hierarchy="Safety" motivator="PhysiologicalSafety" decayFactor="1.5" weight="0.05" intensity="4"/>
+		<MotivationalParameter hierarchy="Safety" motivator="PsychologicalSafety" decayFactor="4" weight="0.065" intensity="4"/>
+		<MotivationalParameter hierarchy="Relationships" prepotency="7"/>
+		<MotivationalParameter hierarchy="Relationships" motivator="GiveLove" decayFactor="2" weight="0.075" intensity="6"/>
+		<MotivationalParameter hierarchy="Relationships" motivator="ReceiveLove" decayFactor="2" weight="0.075" intensity="6"/>
+		<MotivationalParameter hierarchy="Esteem" prepotency="7"/>
+		<MotivationalParameter hierarchy="Esteem" motivator="Achievement" decayFactor="3" weight="0.05" intensity="4"/>
+
+	</MotivationalParameters>
+
+	<Goals>
+		<Goal name="Eat([food])" importanceOfSuccess="4" importanceOfFailure="3" />
+		<Goal name="Drink([liquid])" importanceOfSuccess="5" importanceOfFailure="3" />
+		<Goal name="RestOn([target])" importanceOfSuccess="3" importanceOfFailure="2" />
+		<Goal name="FightBack([target])" importanceOfSuccess="8" importanceOfFailure="7"/>
+	</Goals>
+	
+	<InterpersonalRelations>
+		<Relation target="Luke" like="1" respect="0"/>
+	</InterpersonalRelations>
+	
+	<EventReactions>
+		
+	    <!-- General emotional reactions used in more than one episode -->
+
+	    <!-- percebe que gosta de comer -->
+		<EmotionalReaction desirability="6" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="Eat" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que gosta de beber -->
+		<EmotionalReaction desirability="7" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="Drink" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que gosta de descansar -->
+		<EmotionalReaction desirability="5" praiseworthiness="0"> 
+			<Event subject="[SELF]" action="RestOn" target="*"/>
+		</EmotionalReaction>
+	    
+		<!-- percebe que nao gosta de ver outros chorarem -->
+		<EmotionalReaction desirability="-4" desirabilityForOther="-4" praiseworthiness="-4">
+			<Event subbject="*" action="Cry"/>
+		</EmotionalReaction>
+	
+		<!-- percebe que nao gosta de chorar -->
+		<EmotionalReaction desirability="-4" praiseworthiness="-3">
+			<Event subject="[SELF]" action="Cry"/>
+		</EmotionalReaction>
+
+		<!-- percebe que nao gosta de ver outros serem bullied -->
+		<EmotionalReaction desirability="-3" desirabilityForOther="-7" praiseworthiness="-5">
+			<Event subject="*" action="Bully" target="*"/>
+		</EmotionalReaction>
+
+		<!-- percebe que nao gosta de levar bullying -->
+		<EmotionalReaction desirability="-10" praiseworthiness="-10">
+			<Event subject="*" action="Bully" target="[SELF]"/>
+		</EmotionalReaction>
+
+		<!-- percebe que nao gosta de ser mocked -->
+		<EmotionalReaction desirability="-8" praiseworthiness="-5">
+			<Event subject="*" action="SpeechAct" target="[SELF]" parameters="mock"/>
+		</EmotionalReaction>
+		
+		<!-- percebe que nao gosta de ver/fazer a acao de fighting back acredita ser ruim para quem esta  -->
+		<!-- levando a acao de fighting back entretanto acredita ser praiseworthy a acao -->
+		<EmotionalReaction desirability="-7" desirabilityForOther="-4" praiseworthiness="5">
+			<Event subject="*" action="FightBack" target="*"/>
+		</EmotionalReaction>
+		
+	</EventReactions>
+	
+	<ActionTendencies>
+	
+		<!-- Generic action tendencies -->
+		
+		<!-- Action tendency of insulting when the victim is angry. This also corresponds to the insult coping strategy. -->
+		<!--<ActionTendency action="SpeechAct([Subject],insult)">
+			<Preconditions>
+            </Preconditions>
+			<ElicitingEmotion type="Anger" minIntensity="5">
+				<CauseEvent/>
+			</ElicitingEmotion>
+		</ActionTendency>
+		
+		<ActionTendency action="SpeechAct([Subject],insultinsultback)">
+			<Preconditions>
+            </Preconditions>
+			<ElicitingEmotion type="Anger" minIntensity="3">
+				<CauseEvent subject="*" action="*" target="[SELF]" parameters="insult"/>
+			</ElicitingEmotion>
+		</ActionTendency>-->
+		
+		<!-- Action tendency of crying when the victim is distressed. Corresponds to the cry coping strategy. -->
+		<ActionTendency action="Cry">
+			<Preconditions>
+            </Preconditions>
+			<ElicitingEmotion type="Distress" minIntensity="6">
+				<CauseEvent/>
+			</ElicitingEmotion>
+		</ActionTendency>
+		
+	</ActionTendencies>
+</Character>

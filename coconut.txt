@@ -1,0 +1,5 @@
+isFruit True
+isDrinkable True
+onTree True
+isEmpty False
+type object

@@ -1,0 +1,230 @@
+<GoalLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./schemas/GoalLibrary.xsd">
+
+    <ActivePursuitGoal name="Eat([target])">
+		<PreConditions>
+			<Property name="[target](eatable)" operator="=" value="True" />
+			<Property name="[target](eaten)" operator="=" value="False" />
+			<!--<Property name="[target](onfloor)" operator="=" value="False"/>-->
+			<!--<Property name="SELF(has,[target])" operator="=" value="True" />-->
+			<!--<RecentEvent occurred="True" subject="[SELF]" action="Pick" target="[target]"/>-->
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="Eat" target="[target]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Physiology" drive="Food" target="[SELF]" value="+3"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="Rest([target])">
+		<PreConditions>
+			<Property name="[target]" operator="=" value="[SELF]" />
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[target]" action="Rests" target="[target]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Physiology" drive="Rest" target="[SELF]" value="+3"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="Breathe([target])">
+		<PreConditions>
+			<Property name="[target]" operator="=" value="[SELF]" />
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[target]" action="Breathe" target="[target]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Physiology" drive="Oxygen" target="[SELF]" value="+3"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="GoHome([target])">
+		<PreConditions>
+			<Property name="[target]" operator="=" value="[SELF]" />
+			<Property name="location" operator="!=" value="Home"/>
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="GoHome" target="[target]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Safety" drive="PhysiologicalSafety" target="[SELF]" value="+1"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="StayHome([target])">
+		<PreConditions>
+			<Property name="[target]" operator="=" value="[SELF]" />
+			<Property name="location" operator="=" value="Home"/>
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="EaseAtHome" target="[target]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Safety" drive="PhysiologicalSafety" target="[SELF]" value="+3"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="AcceptInvitation([target])">
+		<PreConditions>
+			<Property name="SELF(invitedBy,[target])" operator="=" value="True"/>
+			<LikeRelation subject="[SELF]" target="[target]" operator="GreaterEqual" value="0"/>
+			<MoodCondition subject="[SELF]" operator="GreaterEqual" value="0"/>
+		</PreConditions>
+		<SuccessConditions>
+			<RecentEvent occurred="True" subject="[SELF]" action="AcceptInvitation" target="[target]"/>
+			<!--<EmotionCondition emotion="Fear" agent="[SELF]" min-intensity="1" />-->
+			<!--<EmotionCondition emotion="Joy" agent="[target]" min-intensity="1" />-->
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="+2"/>
+			<OnSelect hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="+2"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="RejectInvitation([target])">
+		<PreConditions>
+			<Property name="SELF(invitedBy,[target])" operator="=" value="True" />
+			<LikeRelation subject="[SELF]" target="[target]" operator="LesserThan" value="0" />
+			<MoodCondition subject="[SELF]" operator="LesserThan" value="0"/>
+		</PreConditions>
+		<SuccessConditions>
+			<RecentEvent occurred="True" subject="[SELF]" action="RejectInvitation" target="[target]"/>
+			<!--<EmotionCondition emotion="Distress" agent="[SELF]" min-intensity="3" />
+			<EmotionCondition emotion="Distress" agent="[target]" min-intensity="1" />-->
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="-2"/>
+			<OnSelect hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-2"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+
+	<ActivePursuitGoal name="RegulateDistress([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<LikeRelation subject="[SELF]" target="[target]" operator="GreaterThan" value="0" />
+			<EmotionCondition emotion="Distress" agent="[target]" min-intensity="1" />
+		</PreConditions>
+		<SuccessConditions>
+			<!--<NewEvent occurred="True" subject="[target]" action="Smile"/>-->
+			<EmotionCondition emotion="JOY" agent="[target]" min-intensity="1" />
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="+3"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="IncreaseRelation([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<RecentEvent occurred="True" subject="SELF" action="look-at" target="[target]"/>
+			<LikeRelation subject="[SELF]" target="[target]" operator="GreaterThan" value="0" />
+			<LikeRelation subject="[target]" target="[SELF]" operator="LesserThan" value="2" />
+			<!--<EmotionCondition active="False" emotion="JOY" agent="[target]" min-intensity="1" />-->
+		</PreConditions>
+		<SuccessConditions>
+			<!--<NewEvent occurred="True" subject="[target]" action="Smile"/>-->
+			<EmotionCondition emotion="JOY" agent="[SELF]" min-intensity="1" />
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>			
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="+4"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="DecreaseRelation([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<RecentEvent occurred="True" subject="SELF" action="look-at" target="[target]"/>
+			<LikeRelation subject="[SELF]" target="[target]" operator="LesserThan" value="0" />
+			<LikeRelation subject="[target]" target="[SELF]" operator="GreaterThan" value="-2" />
+			<EmotionCondition active="False" emotion="DISTRESS" agent="[target]" min-intensity="1" />
+		</PreConditions>
+		<SuccessConditions>
+			<EmotionCondition emotion="DISTRESS" agent="[target]" min-intensity="1" />
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>			
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="-2"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+	
+	<ActivePursuitGoal name="EmotionSharing([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<LikeRelation subject="[SELF]" target="[target]" operator="GreaterThan" value="0" />
+			<EmotionalEpisodeCondition episode="1" emotion="Joy" value="1" />
+			<RecentEvent occurred="False" subject="[SELF]" action="SpeechAct" target="[target]" parameters="episodesummary,[x],[e]"/>
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="SpeechAct" target="[target]" parameters="episodesummary,[x],[e]"/>
+			<NewEvent occurred="True" subject="[target]" action="SpeechAct" target="[SELF]" parameters="showsupport,[e]"/>
+		</SuccessConditions>
+		<FailureConditions>
+			<NewEvent occurred="True" subject="[target]" action="SpeechAct" target="[SELF]" parameters="rejectsupport"/>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[SELF]" value="+4"/>
+			<OnSelect hierarchy="Relationships" drive="ReceiveLove" target="[SELF]" value="+4"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="ProvideSupport([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<LikeRelation subject="[SELF]" target="[target]" operator="GreaterThan" value="0" />
+			<NewEvent occurred="True" subject="[target]" action="SpeechAct" target="[SELF]" parameters="episodesummary,[x],[e]"/>
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="SpeechAct" target="[target]" parameters="showsupport,[e]"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="[target]" value="+4"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>
+
+	<ActivePursuitGoal name="RejectSupport([target])">
+		<PreConditions>
+			<Property name="[target](isPerson)" operator="=" value="True" />
+			<Property name="[target]" operator="!=" value="[SELF]" />
+			<LikeRelation subject="[SELF]" target="[target]" operator="LesserThan" value="0" />
+			<NewEvent occurred="True" subject="[target]" action="SpeechAct" target="[SELF]" parameters="episodesummary,[x],[e]"/>
+		</PreConditions>
+		<SuccessConditions>
+			<NewEvent occurred="True" subject="[SELF]" action="SpeechAct" target="[target]" parameters="rejectsupport"/>
+		</SuccessConditions>
+		<FailureConditions>
+		</FailureConditions>
+		<ExpectedEffects>
+			<OnSelect hierarchy="Relationships" drive="GiveLove" target="SELF" value="+2"/>
+		</ExpectedEffects>	
+	</ActivePursuitGoal>	
+</GoalLibrary>
