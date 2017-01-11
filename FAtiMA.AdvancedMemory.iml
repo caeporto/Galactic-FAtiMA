@@ -85,6 +85,89 @@
     <libelement value="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xpp3_min-1.1.4c.jar!/" />
     <libelement value="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xstream-1.4.7.jar!/" />
     <libelement value="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/slf4j-simple-1.7.2.jar!/" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-api-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-connector-basic-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-impl-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-spi-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-transport-file-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-transport-http-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-transport-wagon-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aether-util-1.0.0.v20140518.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/ant-1.8.3.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/ant-launcher-1.8.3.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/antlr-runtime-3.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/aopalliance-1.0.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/cdi-api-1.0-SP4.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/commons-codec-1.4.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/commons-lang-2.6.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/commons-logging-1.1.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/dom4j-1.6.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-beliefs-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-compiler-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-core-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-decisiontables-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-jsr94-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-persistence-jpa-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-pmml-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-reteoo-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-scorecards-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-templates-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/drools-verifier-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/ecj-4.4.2.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/guava-13.0.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/httpclient-4.3.6.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/httpcore-4.3.3.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/itext-2.1.2.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/javassist-3.18.1-GA.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/javax.inject-1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jaxb-core-2.2.11.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jaxb-impl-2.2.11.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jcl-over-slf4j-1.7.2.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jsoup-1.8.3.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jsr94-1.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/jsr250-api-1.0.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/kie-api-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/kie-ci-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/kie-internal-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/knowledge-api-6.4.0.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-aether-provider-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-artifact-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-compat-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-core-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-model-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-model-builder-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-plugin-api-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-repository-metadata-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-settings-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/maven-settings-builder-3.2.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/mvel2-2.2.8.Final.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/org.eclipse.sisu.inject-0.3.0.M1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/org.eclipse.sisu.plexus-0.3.0.M1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-cipher-1.7.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-classworlds-2.5.2.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-component-annotations-1.5.5.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-interpolation-1.21.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-sec-dispatcher-1.3.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/plexus-utils-3.0.20.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/poi-3.13.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/poi-ooxml-3.13.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/poi-ooxml-schemas-3.13.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/protobuf-java-2.6.0.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/sisu-guice-3.2.3-no_aop.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/slf4j-api-1.7.2.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/stax-api-1.0.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/wagon-http-2.6.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/wagon-http-shared-2.6.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/wagon-provider-api-2.6.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/xml-apis-1.3.04.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/xmlbeans-2.3.0.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/xmlpull-1.1.3.1.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/xpp3_min-1.1.4c.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/xstream-1.4.7.jar" />
+    <libelement value="file:///Users/caetanoportodasilva/Documents/Aulas/TCII/FAtiMA-Modular/Drools/slf4j-simple-1.7.2.jar" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/FAtiMA.AdvancedMemory/src/main/java" expected_position="0" />
       <src_folder value="file://$MODULE_DIR$/FAtiMA.AdvancedMemory/src/main/rules" expected_position="1" />
@@ -109,754 +192,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Drools" level="project" />
     <orderEntry type="module" module-name="FAtiMA.OCCAffectDerivation" />
-    <orderEntry type="module-library">
-      <library name="aether-api-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-api-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-connector-basic-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-connector-basic-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-impl-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-impl-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-spi-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-spi-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-transport-file-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-transport-file-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-transport-http-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-transport-http-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-transport-wagon-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-transport-wagon-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aether-util-1.0.0.v20140518.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aether-util-1.0.0.v20140518.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="ant-1.8.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/ant-1.8.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="ant-launcher-1.8.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/ant-launcher-1.8.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="antlr-runtime-3.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/antlr-runtime-3.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aopalliance-1.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/aopalliance-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="cdi-api-1.0-SP4.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/cdi-api-1.0-SP4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="commons-codec-1.4.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/commons-codec-1.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="commons-lang-2.6.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/commons-lang-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="commons-logging-1.1.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/commons-logging-1.1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="dom4j-1.6.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/dom4j-1.6.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-beliefs-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-beliefs-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-compiler-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-compiler-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-core-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-core-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-decisiontables-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-decisiontables-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-jsr94-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-jsr94-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-persistence-jpa-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-persistence-jpa-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-pmml-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-pmml-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-reteoo-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-reteoo-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-scorecards-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-scorecards-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-templates-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-templates-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="drools-verifier-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/drools-verifier-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="ecj-4.4.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/ecj-4.4.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="guava-13.0.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/guava-13.0.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="hibernate-jpa-2.0-api-1.0.1.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="httpclient-4.3.6.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/httpclient-4.3.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="httpcore-4.3.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/httpcore-4.3.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="itext-2.1.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/itext-2.1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="javassist-3.18.1-GA.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/javassist-3.18.1-GA.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="javax.inject-1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/javax.inject-1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jaxb-core-2.2.11.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jaxb-core-2.2.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jaxb-impl-2.2.11.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jaxb-impl-2.2.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jboss-interceptors-api_1.1_spec-1.0.1.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jboss-transaction-api_1.1_spec-1.0.1.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jboss-transaction-api_1.1_spec-1.0.1.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jcl-over-slf4j-1.7.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jcl-over-slf4j-1.7.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jsoup-1.8.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jsoup-1.8.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jsr94-1.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jsr94-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jsr250-api-1.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/jsr250-api-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="kie-api-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/kie-api-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="kie-ci-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/kie-ci-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="kie-internal-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/kie-internal-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="knowledge-api-6.4.0.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/knowledge-api-6.4.0.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-aether-provider-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-aether-provider-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-artifact-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-artifact-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-compat-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-compat-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-core-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-core-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-model-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-model-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-model-builder-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-model-builder-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-plugin-api-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-plugin-api-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-repository-metadata-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-repository-metadata-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-settings-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-settings-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="maven-settings-builder-3.2.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/maven-settings-builder-3.2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="mvel2-2.2.8.Final.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/mvel2-2.2.8.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="org.eclipse.sisu.inject-0.3.0.M1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/org.eclipse.sisu.inject-0.3.0.M1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="org.eclipse.sisu.plexus-0.3.0.M1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/org.eclipse.sisu.plexus-0.3.0.M1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-cipher-1.7.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-cipher-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-classworlds-2.5.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-classworlds-2.5.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-component-annotations-1.5.5.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-component-annotations-1.5.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-interpolation-1.21.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-interpolation-1.21.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-sec-dispatcher-1.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-sec-dispatcher-1.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="plexus-utils-3.0.20.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/plexus-utils-3.0.20.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="poi-3.13.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/poi-3.13.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="poi-ooxml-3.13.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/poi-ooxml-3.13.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="poi-ooxml-schemas-3.13.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/poi-ooxml-schemas-3.13.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="protobuf-java-2.6.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/protobuf-java-2.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="sisu-guice-3.2.3-no_aop.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/sisu-guice-3.2.3-no_aop.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="slf4j-api-1.7.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/slf4j-api-1.7.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="stax-api-1.0.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/stax-api-1.0.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="wagon-http-2.6.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/wagon-http-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="wagon-http-shared-2.6.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/wagon-http-shared-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="wagon-provider-api-2.6.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/wagon-provider-api-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xml-apis-1.3.04.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xml-apis-1.3.04.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xmlbeans-2.3.0.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xmlbeans-2.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xmlpull-1.1.3.1.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xmlpull-1.1.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xpp3_min-1.1.4c.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xpp3_min-1.1.4c.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="xstream-1.4.7.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/xstream-1.4.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="slf4j-simple-1.7.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TCII/FAtiMA-Modular/Drools/slf4j-simple-1.7.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Drools" level="project" />
   </component>
 </module>

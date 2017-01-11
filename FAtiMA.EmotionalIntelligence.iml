@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/FAtiMA.EmotionalIntelligence/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="module" module-name="FAtiMA" />
     <orderEntry type="module" module-name="FAtiMA.AdvancedMemory" />
     <orderEntry type="module" module-name="FAtiMA.ReactiveComponent" />

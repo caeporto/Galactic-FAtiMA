@@ -55,11 +55,9 @@ Look-At:Guilhas time Morning
 
 PropertyChanged: * SELF(isPerson) True
 
-PropertyChanged: * SELF(isPerson) True
-
-Look-At:Guilhas isPerson True
-
 Reporting property changed: PROPERTY-CHANGED Guilhas(role)Guilhas
+
+PropertyChanged: * SELF(isPerson) True
 
 Reporting property changed: PROPERTY-CHANGED Guilhas(sex)M
 
@@ -68,6 +66,8 @@ Reporting property changed: PROPERTY-CHANGED Guilhas(name)Guilhas
 Reporting property changed: PROPERTY-CHANGED Guilhas(location)Office
 
 Reporting property changed: PROPERTY-CHANGED Guilhas(time)Morning
+
+Look-At:Guilhas isPerson True
 
 Reporting property changed: PROPERTY-CHANGED Guilhas(isPerson)True
 
