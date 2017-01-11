@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
@@ -85,9 +85,9 @@
    </top>
    <center>
       <ImageView fx:id="Monster" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="teste_pose1.png" />
-         </image>
+         <viewport>
+            <Rectangle2D height="105.0" width="123.0" />
+         </viewport>
       </ImageView>
    </center>
 </BorderPane>
