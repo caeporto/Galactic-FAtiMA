@@ -2,11 +2,14 @@
  * Created by doyle on 02/01/2017.
  */
 
+import FAtiMA.Core.AgentCore;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class View extends Application {
 

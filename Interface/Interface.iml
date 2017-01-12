@@ -7,5 +7,16 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="FAtiMA" />
+    <orderEntry type="module" module-name="FAtiMA.AdvancedMemory" />
+    <orderEntry type="module" module-name="FAtiMA.culture" />
+    <orderEntry type="module" module-name="FAtiMA.DeliberativeComponent" />
+    <orderEntry type="module" module-name="FAtiMA.EmotionalIntelligence" />
+    <orderEntry type="module" module-name="FAtiMA.Empathy" />
+    <orderEntry type="module" module-name="FAtiMA.MotivationalSystem" />
+    <orderEntry type="module" module-name="FAtiMA.OCCAffectDerivation" />
+    <orderEntry type="module" module-name="FAtiMA.ReactiveComponent" />
+    <orderEntry type="module" module-name="FAtiMA.SocialRelations" />
+    <orderEntry type="module" module-name="FAtiMA.ToM" />
   </component>
 </module>

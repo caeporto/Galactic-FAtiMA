@@ -1,9 +1,16 @@
+import FAtiMA.maslowHierarchyOfNeeds.MotivationalComponent;
+import FAtiMA.maslowHierarchyOfNeeds.MotivatorHierarchy;
+import FAtiMA.maslowHierarchyOfNeeds.Motivator;
 import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
+
+import FAtiMA.Core.AgentCore;
+
+import java.util.ArrayList;
 
 /**
  * Created by doyle on 02/01/2017.
@@ -37,6 +44,12 @@ public class Controller {
     public void initialize(){
         System.out.println("Controller initialized.");
 
+        AgentCore ag = AgentLauncher.agents.get(0);
+        MotivationalComponent component = (MotivationalComponent) ag.getComponent("MaslowHierarchy");
+        Motivator[] motivators = component.getMotivators(MotivatorHierarchy.PHYSIOLOGY);
+        Motivator mot = motivators[0];
+        Float intensity = mot.GetIntensity();
+        prototypeModel.setDadoTeste(Float.toString(intensity));
         testLabel.textProperty().bind(prototypeModel.dadoTesteProperty());
 
         Monster.setImage(image);

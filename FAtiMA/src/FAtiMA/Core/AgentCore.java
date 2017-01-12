@@ -121,6 +121,7 @@ public class AgentCore implements Serializable, AgentModel, IGetModelStrategy {
 	private MemoryWriter _memoryWriter;
 	private IGetModelStrategy _strat;
 
+	private static AgentCore agent;
 
 	public AgentCore(String name){
 		_name = name;
