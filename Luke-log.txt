@@ -145,7 +145,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
 
 Reporting property changed: PROPERTY-CHANGED Luke()0.0
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7637646 Competence: 0.6968255 Urgency: 0.0 Total: 1.9258617
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.7322311 Competence: 0.6976143 Urgency: 0.0 Total: 1.9060435
 
 Adding 1st level intention: Eat(cheeseburger)
 
@@ -175,6 +175,14 @@ PropertyChanged: * coke(type) object
 
 Look-At:coke type object
 
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Sending action for execution: Eat cheeseburger
+
+Cannot act now!
+
 Luke: Processing message: ACTION-FINISHED Luke look-at coke
 
 appraising event: EVENT(Luke,look-at,coke)
@@ -192,14 +200,6 @@ PropertyChanged: * couch(type) object
 PropertyChanged: * couch(type) object
 
 Look-At:couch type object
-
-Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Sending action for execution: Eat cheeseburger
-
-Cannot act now!
 
 Luke: Processing message: ACTION-FINISHED Luke look-at couch
 
@@ -229,7 +229,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at user
 
 appraising event: EVENT(Luke,look-at,user)
 
-Goal: Drink(coke) CulturalUtilitity: 3.3103423 Competence: 0.69603974 Urgency: 0.0 Total: 2.3041298
+Goal: Drink(coke) CulturalUtilitity: 3.2861152 Competence: 0.6968255 Urgency: 0.0 Total: 2.2898488
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
@@ -269,84 +269,4 @@ Sending action for execution: Drink coke
 
 Cannot act now!
 
-Goal: Drink(coke) CulturalUtilitity: 2.3179517 Competence: 1.0 Urgency: 0.0 Total: 2.3179517
-
-Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
-
-PropertyChanged: * Luke(drankLiquid) True
-
-Reporting property changed: PROPERTY-CHANGED Luke(drankLiquid)True
-
-Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
-
-PropertyChanged: * Luke(drankLiquid) True
-
-Luke: Processing message: ACTION-FINISHED Luke Drink coke
-
-can act now!
-
-appraising event: EVENT(Luke,Drink,coke)
-
-Updating motivator Liquid
-
-Updating motivator PhysiologicalSafety
-
-Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
-
-Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Sending action for execution: RestOn couch
-
-Cannot act now!
-
-Luke: Processing message: ACTION-FINISHED Luke RestOn couch
-
-can act now!
-
-appraising event: EVENT(Luke,RestOn,couch)
-
-Updating motivator Rest
-
-Updating motivator PhysiologicalSafety
-
-Adding 1st level intention: RestOn(couch)
-
-Adding a new Intention: RestOn(couch)
-
-Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
-
-Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Sending action for execution: RestOn couch
-
-Cannot act now!
-
-Goal: RestOn(couch) CulturalUtilitity: 0.67019975 Competence: 1.0 Urgency: 0.0 Total: 0.67019975
-
-Luke: Processing message: ACTION-FINISHED Luke RestOn couch
-
-can act now!
-
-appraising event: EVENT(Luke,RestOn,couch)
-
-Updating motivator Rest
-
-Updating motivator PhysiologicalSafety
-
-Goal: RestOn(couch) CulturalUtilitity: 0.11171362 Competence: 0.891428 Urgency: 0.0 Total: 0.09958465
-
-Goal: RestOn(couch) CulturalUtilitity: 0.12415376 Competence: 0.88753325 Urgency: 0.0 Total: 0.11019059
-
-Goal: RestOn(couch) CulturalUtilitity: 0.14076996 Competence: 0.8829106 Urgency: 0.0 Total: 0.12428729
-
-Goal: RestOn(couch) CulturalUtilitity: 0.15916736 Competence: 0.87834316 Urgency: 0.0 Total: 0.13980357
-
-Goal: RestOn(couch) CulturalUtilitity: 0.17928426 Competence: 0.8738302 Urgency: 0.0 Total: 0.156664
-
-Goal: RestOn(couch) CulturalUtilitity: 0.20106041 Competence: 0.86937106 Urgency: 0.0 Total: 0.1747961
-
-Goal: RestOn(couch) CulturalUtilitity: 0.22043215 Competence: 0.8656957 Urgency: 0.0 Total: 0.19082716
+Goal: Drink(coke) CulturalUtilitity: 2.2961457 Competence: 1.0 Urgency: 0.0 Total: 2.2961457
