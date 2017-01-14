@@ -6,6 +6,7 @@ import FAtiMA.Core.AgentCore;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TitledPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -26,7 +27,9 @@ public class View extends Application {
 
         Pane root = FXMLLoader.load(getClass().getResource("Layout.fxml"));
 
-        Scene firstScene = new Scene(root, 800, 600);
+        Scene firstScene = new Scene(root, 400, 300);
+
+        primaryStage.setTitle("Prototype");
 
         primaryStage.setMinWidth(400);
         primaryStage.setMinHeight(300);
