@@ -1,7 +1,13 @@
+import FAtiMA.Core.emotionalState.ActiveEmotion;
+import FAtiMA.Core.emotionalState.EmotionalState;
 import FAtiMA.Core.exceptions.ActionsParsingException;
 import FAtiMA.Core.exceptions.GoalLibParsingException;
 import FAtiMA.Core.exceptions.UnknownGoalException;
+import FAtiMA.Core.goals.Goal;
+import FAtiMA.Core.goals.GoalLibrary;
+import FAtiMA.Core.sensorEffector.Event;
 import FAtiMA.Core.util.ConfigurationManager;
+import FAtiMA.Core.wellFormedNames.Name;
 import FAtiMA.DeliberativeComponent.DeliberativeComponent;
 import FAtiMA.OCCAffectDerivation.OCCAffectDerivationComponent;
 import FAtiMA.ReactiveComponent.ReactiveComponent;
@@ -10,8 +16,13 @@ import FAtiMA.advancedMemoryComponent.AdvancedMemoryComponent;
 import FAtiMA.culture.CulturalDimensionsComponent;
 import FAtiMA.emotionalIntelligence.EmotionalIntelligence;
 import FAtiMA.empathy.EmpathyComponent;
+import FAtiMA.maslowHierarchyOfNeeds.MotivationalComponent;
+import FAtiMA.maslowHierarchyOfNeeds.Motivator;
+import FAtiMA.maslowHierarchyOfNeeds.MotivatorHierarchy;
 import FAtiMA.socialRelations.SocialRelationsComponent;
 import javafx.animation.Animation;
+import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.Image;
@@ -31,14 +42,16 @@ import java.util.*;
 
 public class Controller {
 
-    public static final HashMap<Thread, AgentCore> agents = new HashMap();
+    private static final HashMap<Thread, AgentCore> agents = new HashMap();
 
-    public static final String[] ag_modules = {"MaslowHierarchy", "MotivationalState", "SocialRelations", "AdvancedMemory", "EmotionalIntelligence", "ToM", "CulturalDimensionsComponent", "EmpathyComponent"};
+    private static final String[] ag_modules = {"MaslowHierarchy", "MotivationalState", "SocialRelations", "AdvancedMemory", "EmotionalIntelligence", "ToM", "CulturalDimensionsComponent", "EmpathyComponent"};
+    private static String agentName;
 
-    //private View prototypeView = new View();
-    private Model prototypeModel = new Model();
+    //Needs
+    private Model foodModel = new Model(), liquidModel = new Model(), sleepModel = new Model();
 
-    private int bindTestInteger = 0;
+    //Emotions
+    private Model moodModel = new Model();
 
     private static final Image image = new Image("spritesheetBully.png");
 
@@ -51,15 +64,33 @@ public class Controller {
 
     private Animation animation;
 
+    @FXML
+    private javafx.scene.control.Label foodLabel;
 
     @FXML
-    private javafx.scene.control.Label testLabel;
+    private javafx.scene.control.Label liquidLabel;
+
+    @FXML
+    private javafx.scene.control.Label sleepLabel;
+
+    @FXML
+    private javafx.scene.control.Label moodLabel;
 
     @FXML
     private ImageView Monster;
 
+    @FXML
+    private javafx.scene.layout.VBox emotionPanel;
+
+    private static Iterator<ActiveEmotion> currentActiveEmotions; //used to display current active emotions
+
     public void initialize(){
         System.out.println("Controller initialized.");
+
+        foodLabel.textProperty().bind(foodModel.dadoTesteProperty());
+        liquidLabel.textProperty().bind(liquidModel.dadoTesteProperty());
+        sleepLabel.textProperty().bind(sleepModel.dadoTesteProperty());
+        moodLabel.textProperty().bind(moodModel.dadoTesteProperty());
 
         String xml = View.arguments[0];
         String scenery = View.arguments[1];
@@ -109,6 +140,7 @@ public class Controller {
         try {
             String[] ag_args2 = ag_config.toArray(new String[ag_config.size()]);
             String[] scenery_args2 = new String[]{xml, scenery};
+            agentName = ag_args2[0];
             initializeAgent(addArray(scenery_args2, ag_args2));
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -124,13 +156,24 @@ public class Controller {
             e.printStackTrace();
         }
 
-//        AgentCore ag = AgentLauncher.agents.get(0);
-//        MotivationalComponent component = (MotivationalComponent) ag.getComponent("MaslowHierarchy");
-//        Motivator[] motivators = component.getMotivators(MotivatorHierarchy.PHYSIOLOGY);
-//        Motivator mot = motivators[0];
-//        Float intensity = mot.GetIntensity();
-//        prototypeModel.setDadoTeste(Float.toString(intensity));
-        testLabel.textProperty().bind(prototypeModel.dadoTesteProperty());
+        Task task = new Task<Void>() {
+            @Override
+            public Void call() throws Exception {
+                while (true) {
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            updateNeeds();
+                            updateEmotions();
+                            updateGoals();
+                        }
+                    });
+                    Thread.sleep(100);
+                }
+            }
+        };
+        Thread updateThread = new Thread(task);
+        updateThread.start();
 
         Monster.setImage(image);
 
@@ -149,9 +192,69 @@ public class Controller {
 
     }
 
-    public void bindTest(){
-        bindTestInteger+=1;
-        prototypeModel.setDadoTeste(prototypeModel.getDadoTeste() + bindTestInteger);
+    public void updateNeeds(){
+        AgentCore ag = agents.get(this.getThreadByName(agentName));
+        MotivationalComponent component = (MotivationalComponent) ag.getComponent("MotivationalState");
+        Motivator[] motivators = component.getMotivators(MotivatorHierarchy.PHYSIOLOGY);
+        for(int i = 0; i < motivators.length; i++)
+        {
+            Motivator mot = motivators[i];
+            if(mot != null)
+            {
+                switch(i){
+                    case 0: //Food
+                        Float foodIntensity = mot.GetIntensity();
+                        foodModel.setDadoTeste(Float.toString(foodIntensity));
+                        break;
+                    case 1: //Liquid
+                        Float liquidIntensity = mot.GetIntensity();
+                        liquidModel.setDadoTeste(Float.toString(liquidIntensity));
+                        break;
+                    case 2: //Sleep
+                        Float sleepIntensity = mot.GetIntensity();
+                        sleepModel.setDadoTeste(Float.toString(sleepIntensity));
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                }
+            }
+        }
+    }
+
+    public void updateEmotions(){
+        AgentCore ag = agents.get(this.getThreadByName(agentName));
+        EmotionalState state = ag.getEmotionalState();
+        Float mood = state.GetMood(); //mood
+        Iterator<ActiveEmotion> active_emotions = state.GetEmotionsIterator(); //set of currently active emotions
+        //emotionPanel.getChildren().removeAll();
+        for (; active_emotions.hasNext(); ) {
+            ActiveEmotion emotion = active_emotions.next();
+            String emotion_name = emotion.getType();
+            Float intensity = emotion.GetIntensity();
+            Name direction = emotion.GetDirection();
+            Event event = emotion.GetCause(); //action, subject, target, etc...
+            String action = event.GetAction();
+            String subject = event.GetSubject();
+            String target = event.GetTarget();
+            //emotionPanel.getChildren().add(null);
+            System.err.println("Active Emotion: "+emotion_name+" Intensity: "+intensity+" Who is Feeling: "+agentName+" Against who: "+direction.GetFirstLiteral().getName());
+            System.err.println("Felt on Action: "+action+" Subject: "+subject+" target: "+target);
+        }
+        moodModel.setDadoTeste("Mood "+Float.toString(mood));
+        ////System.out.println(intensity);
+        //prototypeModel.setDadoTeste(Float.toString(intensity));
+    }
+
+    public void updateGoals(){
+        AgentCore ag = agents.get(this.getThreadByName(agentName));
+        GoalLibrary goalLibrary = ag.getGoalLibrary();
+        ListIterator<Goal> currentGoals = goalLibrary.GetGoals();
     }
 
     public void initializeAgent(String[] args) throws ParserConfigurationException, SAXException, IOException, UnknownGoalException, ActionsParsingException, GoalLibParsingException
@@ -248,5 +351,43 @@ public class Controller {
         Collections.addAll(both, second);
         return both.toArray(new String[both.size()]);
     }
+
+    public Thread getThreadByName(String threadName) {
+        for (Thread t : Thread.getAllStackTraces().keySet()) {
+            if (t.getName().equals(threadName)) return t;
+        }
+        return null;
+    }
+
+    public int compareIterator(Iterator<ActiveEmotion> activeEmotions, Iterator<ActiveEmotion> currentActiveEmotions)
+    {
+        int compare = 0;
+        while(activeEmotions.hasNext() && currentActiveEmotions.hasNext()){
+            if(!currentActiveEmotions.next().equals(activeEmotions.next())){
+                compare = -2; //not equal on their contents
+                break;
+            }
+        }
+
+        if(activeEmotions.hasNext())
+            return 1;
+        else if(currentActiveEmotions.hasNext())
+            return -1;
+
+        return compare;
+    }
+
+//    public Set<ActiveEmotion> differenceSet(Set<>)
+//    {
+//        Set<Type> symmetricDiff = new HashSet<Type>(set1);
+//        symmetricDiff.addAll(set2);
+//        // symmetricDiff now contains the union
+//        Set<Type> tmp = new HashSet<Type>(set1);
+//        tmp.retainAll(set2);
+//        // tmp now contains the intersection
+//        symmetricDiff.removeAll(tmp);
+//        // union minus intersection equals symmetric-difference
+//        return symmetricDiff;
+//    }
 
 }

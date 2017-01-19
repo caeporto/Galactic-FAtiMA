@@ -21,19 +21,19 @@
                <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
                    <left>
                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-                           <Label alignment="CENTER" text="Value X" textAlignment="JUSTIFY" />
+                           <Label fx:id="foodLabel" alignment="CENTER" text="Food" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.5" fx:id="xProgressBar">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label alignment="CENTER" text="Value Y" textAlignment="JUSTIFY" />
+                           <Label fx:id="liquidLabel" alignment="CENTER" text="Liquid" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.82">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label alignment="CENTER" text="Value Z" textAlignment="JUSTIFY" />
+                           <Label fx:id="sleepLabel" alignment="CENTER" text="Sleep" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.57">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
@@ -122,7 +122,7 @@
            <Tab text="EmotionalState">
                <BorderPane>
                    <center>
-                       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                       <VBox fx:id="emotionPanel" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                                <Separator prefWidth="200.0" />
                                <Label alignment="CENTER" text="Emotion" textAlignment="CENTER" />
@@ -142,7 +142,7 @@
                    <top>
                   <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
                      <children>
-                             <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="46.0" text="Mood" textAlignment="CENTER" />
+                             <Label fx:id="moodLabel" alignment="TOP_CENTER" prefHeight="21.0" prefWidth="46.0" text="Mood" textAlignment="CENTER" />
                         <ProgressBar prefWidth="200.0" progress="0.0" />
                      </children>
                      <opaqueInsets>
