@@ -145,7 +145,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
 
 Reporting property changed: PROPERTY-CHANGED Luke()0.0
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7164545 Competence: 0.69800997 Urgency: 0.0 Total: 1.8961123
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.7480009 Competence: 0.6972195 Urgency: 0.0 Total: 1.9159597
 
 Adding 1st level intention: Eat(cheeseburger)
 
@@ -175,17 +175,7 @@ PropertyChanged: * coke(type) object
 
 Look-At:coke type object
 
-Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Sending action for execution: Eat cheeseburger
-
-Cannot act now!
-
 Luke: Processing message: ACTION-FINISHED Luke look-at coke
-
-appraising event: EVENT(Luke,look-at,coke)
 
 Luke: Processing message: LOOK-AT couch canRest:True type:object 
 
@@ -202,8 +192,6 @@ PropertyChanged: * couch(type) object
 Look-At:couch type object
 
 Luke: Processing message: ACTION-FINISHED Luke look-at couch
-
-appraising event: EVENT(Luke,look-at,couch)
 
 Luke: Processing message: LOOK-AT user isPerson:True power:10 type:character 
 
@@ -227,15 +215,27 @@ Look-At:user type character
 
 Luke: Processing message: ACTION-FINISHED Luke look-at user
 
+appraising event: EVENT(Luke,look-at,coke)
+
+appraising event: EVENT(Luke,look-at,couch)
+
 appraising event: EVENT(Luke,look-at,user)
 
-Goal: Drink(coke) CulturalUtilitity: 3.2739375 Competence: 0.6972195 Urgency: 0.0 Total: 2.282653
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Sending action for execution: Eat cheeseburger
+
+Cannot act now!
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
 PropertyChanged: * Luke(eatenFood) True
 
 Reporting property changed: PROPERTY-CHANGED Luke(eatenFood)True
+
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.8267386 Competence: 1.0 Urgency: 0.0 Total: 2.8267386
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
@@ -268,8 +268,6 @@ Selecting Action: SELF:Drink(coke)from plan:Plan P=1.0 Steps: [SELF:Drink(coke)]
 Sending action for execution: Drink coke
 
 Cannot act now!
-
-Goal: Drink(coke) CulturalUtilitity: 2.3248062 Competence: 1.0 Urgency: 0.0 Total: 2.3248062
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
@@ -325,7 +323,7 @@ Sending action for execution: RestOn couch
 
 Cannot act now!
 
-Goal: RestOn(couch) CulturalUtilitity: 0.6529983 Competence: 1.0 Urgency: 0.0 Total: 0.6529983
+Goal: RestOn(couch) CulturalUtilitity: 0.65989155 Competence: 1.0 Urgency: 0.0 Total: 0.65989155
 
 Luke: Processing message: ACTION-FINISHED Luke RestOn couch
 
@@ -337,6 +335,28 @@ Updating motivator Rest
 
 Updating motivator PhysiologicalSafety
 
-Goal: RestOn(couch) CulturalUtilitity: 0.10554488 Competence: 0.8934187 Urgency: 0.0 Total: 0.09429577
+Goal: RestOn(couch) CulturalUtilitity: 0.10859428 Competence: 0.892647 Urgency: 0.0 Total: 0.09693637
 
-Goal: RestOn(couch) CulturalUtilitity: 0.117266394 Competence: 0.88950413 Urgency: 0.0 Total: 0.10430894
+Goal: RestOn(couch) CulturalUtilitity: 0.12337973 Competence: 0.8879634 Urgency: 0.0 Total: 0.10955668
+
+Goal: RestOn(couch) CulturalUtilitity: 0.14001107 Competence: 0.8833357 Urgency: 0.0 Total: 0.12367678
+
+Goal: RestOn(couch) CulturalUtilitity: 0.15842459 Competence: 0.87876314 Urgency: 0.0 Total: 0.13921769
+
+Goal: RestOn(couch) CulturalUtilitity: 0.17855807 Competence: 0.87424517 Urgency: 0.0 Total: 0.15610352
+
+Goal: RestOn(couch) CulturalUtilitity: 0.20035155 Competence: 0.869781 Urgency: 0.0 Total: 0.17426197
+
+Goal: RestOn(couch) CulturalUtilitity: 0.22374596 Competence: 0.86537015 Urgency: 0.0 Total: 0.19362307
+
+Goal: RestOn(couch) CulturalUtilitity: 0.24868444 Competence: 0.8610119 Urgency: 0.0 Total: 0.21412027
+
+Goal: RestOn(couch) CulturalUtilitity: 0.275111 Competence: 0.85670567 Urgency: 0.0 Total: 0.23568915
+
+Goal: RestOn(couch) CulturalUtilitity: 0.29823095 Competence: 0.85315645 Urgency: 0.0 Total: 0.25443766
+
+Goal: RestOn(couch) CulturalUtilitity: 0.32724684 Competence: 0.8489439 Urgency: 0.0 Total: 0.2778142
+
+Goal: RestOn(couch) CulturalUtilitity: 0.35760152 Competence: 0.8447816 Urgency: 0.0 Total: 0.30209517
+
+Goal: RestOn(couch) CulturalUtilitity: 0.38924542 Competence: 0.8406689 Urgency: 0.0 Total: 0.32722652

@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -161,13 +160,10 @@
                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                                <Separator prefWidth="200.0" />
-                               <Label alignment="CENTER" text="X goals" textAlignment="CENTER" />
-                               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                                   <children>
-                                       <Label text="x+1 - 2;" />
-                                   </children>
-                               </HBox>
+                        <VBox fx:id="goalsBox" prefHeight="200.0" prefWidth="100.0" />
                                <Separator prefWidth="200.0" />
+                        <Label text="Intentions" />
+                        <VBox fx:id="intentionsBox" prefHeight="200.0" prefWidth="100.0" />
                            </children>
                        </VBox>
                    </center>

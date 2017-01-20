@@ -9,6 +9,7 @@ import FAtiMA.Core.sensorEffector.Event;
 import FAtiMA.Core.util.ConfigurationManager;
 import FAtiMA.Core.wellFormedNames.Name;
 import FAtiMA.DeliberativeComponent.DeliberativeComponent;
+import FAtiMA.DeliberativeComponent.Intention;
 import FAtiMA.OCCAffectDerivation.OCCAffectDerivationComponent;
 import FAtiMA.ReactiveComponent.ReactiveComponent;
 import FAtiMA.ToM.ToMComponent;
@@ -20,6 +21,7 @@ import FAtiMA.maslowHierarchyOfNeeds.MotivationalComponent;
 import FAtiMA.maslowHierarchyOfNeeds.Motivator;
 import FAtiMA.maslowHierarchyOfNeeds.MotivatorHierarchy;
 import FAtiMA.socialRelations.SocialRelationsComponent;
+import com.sun.org.apache.bcel.internal.generic.GOTO;
 import javafx.animation.Animation;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
@@ -54,7 +56,7 @@ public class Controller {
 
     private static final Image image = new Image("spritesheetBully.png");
 
-    private static final int COLUMNS  =   3;
+    private static final int COLUMNS  =  3;
     private static final int COUNT    =  8;
     private static final int OFFSET_X =  3;
     private static final int OFFSET_Y =  5;
@@ -78,12 +80,20 @@ public class Controller {
 
     @FXML private javafx.scene.layout.VBox emotionsBox;
 
+    @FXML private javafx.scene.layout.VBox goalsBox;
+
+    @FXML private javafx.scene.layout.VBox intentionsBox;
+
     @FXML private ProgressBar moodBar;
 
-    private static Iterator<ActiveEmotion> currentActiveEmotions; //used to display current active emotions
+    private static HashMap<String, Label> currentActiveEmotions; //used to display current active emotions
+    private static HashMap<String, Label> currentActiveIntentions; //used to display current active intentions
 
     public void initialize(){
         System.out.println("Controller initialized.");
+
+        currentActiveEmotions = new HashMap<>();
+        currentActiveIntentions = new HashMap<>();
 
         foodLabel.textProperty().bind(dataModel.foodValueProperty());
         foodLabelMS.textProperty().bind(dataModel.foodValueProperty());
@@ -165,13 +175,14 @@ public class Controller {
         Task task = new Task<Void>() {
             @Override
             public Void call() throws Exception {
+                initializeGoals();
                 while (true) {
                     Platform.runLater(new Runnable() {
                         @Override
                         public void run() {
                             updateNeeds();
                             updateEmotions();
-                            updateGoals();
+                            updateIntentions();
                         }
                     });
                     Thread.sleep(100);
@@ -238,7 +249,7 @@ public class Controller {
         EmotionalState state = ag.getEmotionalState();
         Float mood = state.GetMood(); //mood
         Iterator<ActiveEmotion> active_emotions = state.GetEmotionsIterator(); //set of currently active emotions
-        emotionsBox.getChildren().removeAll();
+        //emotionsBox.getChildren().removeAll(currentActiveEmotions.values());
         for (; active_emotions.hasNext(); ) {
             ActiveEmotion emotion = active_emotions.next();
             String emotion_name = emotion.getType();
@@ -248,7 +259,26 @@ public class Controller {
             String action = event.GetAction();
             String subject = event.GetSubject();
             String target = event.GetTarget();
-            emotionsBox.getChildren().add(new Label("Testando")); // nome da emotion, nome do agent, action, subject, target?
+            String currentEmotion = emotion_name+action+subject+target;
+            boolean edited = false;
+            for(String s : currentActiveEmotions.keySet())
+            {
+                if(s.equals(currentEmotion))
+                {
+                    //editar valor na interface
+                    Label label = currentActiveEmotions.get(currentEmotion);
+                    label.setText(subject+" "+emotion_name+" "+action+" "+target+" "+intensity);
+                    edited = true;
+                    break;
+                }
+            }
+            if(!edited)
+            {
+                //criar emocao na interface
+                Label label = new Label(subject+" "+emotion_name+" "+action+" "+target+" "+intensity);
+                currentActiveEmotions.put(currentEmotion, label);
+                emotionsBox.getChildren().add(label);
+            }
             //System.err.println("Active Emotion: "+emotion_name+" Intensity: "+intensity+" Who is Feeling: "+agentName+" Against who: "+direction.GetFirstLiteral().getName());
             //System.err.println("Felt on Action: "+action+" Subject: "+subject+" target: "+target);
         }
@@ -256,10 +286,53 @@ public class Controller {
         moodBar.setProgress(mood);
     }
 
-    public void updateGoals(){
+    public void initializeGoals(){
         AgentCore ag = agents.get(this.getThreadByName(agentName));
         GoalLibrary goalLibrary = ag.getGoalLibrary();
         ListIterator<Goal> currentGoals = goalLibrary.GetGoals();
+
+        for(; currentGoals.hasNext(); )
+        {
+            Goal goal = currentGoals.next();
+            String status = goal.GenerateGoalStatus("");
+            goalsBox.getChildren().add(new Label(status));
+        }
+
+    }
+
+    public void updateIntentions(){
+        AgentCore ag = agents.get(this.getThreadByName(agentName));
+        DeliberativeComponent dc = (DeliberativeComponent) ag.getComponent("Deliberative");
+        Iterator<Intention> currentIntentions = dc.getIntentionsIterator();
+        for (; currentIntentions.hasNext(); )
+        {
+            Intention intention = currentIntentions.next();
+            Float success = new Float(intention.getGoal().GetImportanceOfSuccess(ag));
+            Float failure = new Float(intention.getGoal().GetImportanceOfFailure(ag));
+            Integer n_plans = new Integer(intention.NumberOfAlternativePlans());
+            Float prob = new Float(intention.GetProbability(ag));
+            String name = intention.getGoal().getName().GetFirstLiteral().getName();
+            String currentIntention = name;
+            boolean edited = false;
+            for(String s : currentActiveIntentions.keySet())
+            {
+                if(s.equals(currentIntention))
+                {
+                    //editar valor na interface
+                    Label label = currentActiveIntentions.get(currentIntention);
+                    label.setText(name+" "+success+" "+failure+" "+n_plans+" "+prob);
+                    edited = true;
+                    break;
+                }
+            }
+            if(!edited)
+            {
+                //criar emocao na interface
+                Label label = new Label(name+" "+success+" "+failure+" "+n_plans+" "+prob);
+                currentActiveIntentions.put(currentIntention, label);
+                intentionsBox.getChildren().add(label);
+            }
+        }
     }
 
     public void initializeAgent(String[] args) throws ParserConfigurationException, SAXException, IOException, UnknownGoalException, ActionsParsingException, GoalLibParsingException
