@@ -27,12 +27,11 @@ public class View extends Application {
 
         Pane root = FXMLLoader.load(getClass().getResource("Layout.fxml"));
 
-        Scene firstScene = new Scene(root, 400, 300);
+        Scene firstScene = new Scene(root, 600, 400);
 
         primaryStage.setTitle("Prototype");
 
-        primaryStage.setMinWidth(400);
-        primaryStage.setMinHeight(300);
+        primaryStage.setResizable(false);
 
         primaryStage.setScene(firstScene);
 

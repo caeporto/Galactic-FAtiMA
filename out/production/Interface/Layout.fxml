@@ -4,7 +4,6 @@
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -20,20 +19,20 @@
            <Tab text="Monster">
                <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
                    <left>
-                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-                           <Label alignment="CENTER" text="Value X" textAlignment="JUSTIFY" />
+                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+                           <Label fx:id="foodLabel" alignment="CENTER" text="Food" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.5" fx:id="xProgressBar">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label alignment="CENTER" text="Value Y" textAlignment="JUSTIFY" />
+                           <Label fx:id="liquidLabel" alignment="CENTER" text="Liquid" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.82">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label alignment="CENTER" text="Value Z" textAlignment="JUSTIFY" />
+                           <Label fx:id="sleepLabel" alignment="CENTER" text="Sleep" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.57">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
@@ -51,11 +50,11 @@
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label fx:id="testLabel" onMouseClicked="#bindTest" text="Test" />
+                           <Label fx:id="testLabel" text="Test" />
                        </VBox>
                    </left>
                    <right>
-                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="60.0" BorderPane.alignment="CENTER">
                            <Label alignment="CENTER" text="Value X" textAlignment="JUSTIFY" />
                            <ProgressBar prefWidth="200.0" progress="0.6">
                                <padding>
@@ -104,12 +103,21 @@
                      <children>
                         <Separator prefWidth="200.0" />
                         <Label alignment="CENTER" text="Physiological Needs" textAlignment="CENTER" />
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <Label text="Liquid" />
-                              <ProgressIndicator progress="0.23" />
-                           </children>
-                        </HBox>
+                        <Label fx:id="foodLabelMS" text="Food Need">
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="liquidLabelMS" layoutX="270.0" layoutY="34.0" text="Liquid Need">
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="sleepLabelMS" layoutX="270.0" layoutY="58.0" text="Sleep Need">
+                           <padding>
+                              <Insets bottom="10.0" top="20.0" />
+                           </padding>
+                        </Label>
                         <Separator prefWidth="200.0" />
                      </children>
                   </VBox>
@@ -122,22 +130,28 @@
            <Tab text="EmotionalState">
                <BorderPane>
                    <center>
-                       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                       <VBox fx:id="emotionPanel" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                                <Separator prefWidth="200.0" />
-                               <Label alignment="CENTER" text="Physiological Needs" textAlignment="CENTER" />
-                               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                                   <children>
-                                       <Label text="Liquid" />
-                                       <ProgressIndicator progress="0.23" />
-                                   </children>
-                               </HBox>
+                               <Label alignment="CENTER" text="Emotions" textAlignment="CENTER" />
+                        <VBox fx:id="emotionsBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" />
                                <Separator prefWidth="200.0" />
                            </children>
                        </VBox>
                    </center>
                    <top>
-                       <Label text="Needs" BorderPane.alignment="CENTER" />
+                  <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                             <Label fx:id="moodLabel" alignment="TOP_CENTER" prefHeight="21.0" prefWidth="200.0" text="Mood : 000" textAlignment="CENTER" />
+                        <ProgressBar fx:id="moodBar" prefWidth="200.0" progress="0.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
                    </top>
                </BorderPane>
            </Tab>
@@ -147,11 +161,10 @@
                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                                <Separator prefWidth="200.0" />
-                               <Label alignment="CENTER" text="Physiological Needs" textAlignment="CENTER" />
+                               <Label alignment="CENTER" text="X goals" textAlignment="CENTER" />
                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                    <children>
-                                       <Label text="Liquid" />
-                                       <ProgressIndicator progress="0.23" />
+                                       <Label text="x+1 - 2;" />
                                    </children>
                                </HBox>
                                <Separator prefWidth="200.0" />
@@ -159,7 +172,7 @@
                        </VBox>
                    </center>
                    <top>
-                       <Label text="Needs" BorderPane.alignment="CENTER" />
+                       <Label text="Goals" BorderPane.alignment="CENTER" />
                    </top>
                </BorderPane>
            </Tab>

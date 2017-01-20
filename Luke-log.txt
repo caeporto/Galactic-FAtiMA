@@ -229,7 +229,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at user
 
 appraising event: EVENT(Luke,look-at,user)
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7480009 Competence: 1.0 Urgency: 0.0 Total: 2.7480009
+Goal: Drink(coke) CulturalUtilitity: 3.2739375 Competence: 0.6972195 Urgency: 0.0 Total: 2.282653
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
@@ -240,8 +240,6 @@ Reporting property changed: PROPERTY-CHANGED Luke(eatenFood)True
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
 PropertyChanged: * Luke(eatenFood) True
-
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7637646 Competence: 1.0 Urgency: 0.0 Total: 2.7637646
 
 Luke: Processing message: ACTION-FINISHED Luke Eat cheeseburger
 
@@ -271,7 +269,7 @@ Sending action for execution: Drink coke
 
 Cannot act now!
 
-Goal: Drink(coke) CulturalUtilitity: 2.304492 Competence: 1.0 Urgency: 0.0 Total: 2.304492
+Goal: Drink(coke) CulturalUtilitity: 2.3248062 Competence: 1.0 Urgency: 0.0 Total: 2.3248062
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
@@ -327,7 +325,7 @@ Sending action for execution: RestOn couch
 
 Cannot act now!
 
-Goal: RestOn(couch) CulturalUtilitity: 0.6614442 Competence: 1.0 Urgency: 0.0 Total: 0.6614442
+Goal: RestOn(couch) CulturalUtilitity: 0.6529983 Competence: 1.0 Urgency: 0.0 Total: 0.6529983
 
 Luke: Processing message: ACTION-FINISHED Luke RestOn couch
 
@@ -339,40 +337,6 @@ Updating motivator Rest
 
 Updating motivator PhysiologicalSafety
 
-Goal: RestOn(couch) CulturalUtilitity: 0.1074509 Competence: 0.8927919 Urgency: 0.0 Total: 0.0959313
+Goal: RestOn(couch) CulturalUtilitity: 0.10554488 Competence: 0.8934187 Urgency: 0.0 Total: 0.09429577
 
-Goal: RestOn(couch) CulturalUtilitity: 0.12194131 Competence: 0.8881066 Urgency: 0.0 Total: 0.108296886
-
-Goal: RestOn(couch) CulturalUtilitity: 0.13543683 Competence: 0.88424486 Urgency: 0.0 Total: 0.11975932
-
-Goal: RestOn(couch) CulturalUtilitity: 0.1501838 Competence: 0.8804216 Urgency: 0.0 Total: 0.13222505
-
-Goal: RestOn(couch) CulturalUtilitity: 0.16614595 Competence: 0.87663627 Urgency: 0.0 Total: 0.14564957
-
-Goal: RestOn(couch) CulturalUtilitity: 0.183288 Competence: 0.8728887 Urgency: 0.0 Total: 0.15999001
-
-Goal: RestOn(couch) CulturalUtilitity: 0.2053669 Competence: 0.8684408 Urgency: 0.0 Total: 0.17834899
-
-Goal: RestOn(couch) CulturalUtilitity: 0.2249836 Competence: 0.8647747 Urgency: 0.0 Total: 0.19456013
-
-Goal: RestOn(couch) CulturalUtilitity: 0.24567169 Competence: 0.86114514 Urgency: 0.0 Total: 0.21155898
-
-Goal: RestOn(couch) CulturalUtilitity: 0.2673991 Competence: 0.8575517 Urgency: 0.0 Total: 0.22930856
-
-Goal: RestOn(couch) CulturalUtilitity: 0.29479975 Competence: 0.85328674 Urgency: 0.0 Total: 0.2515487
-
-Goal: RestOn(couch) CulturalUtilitity: 0.32359847 Competence: 0.84907264 Urgency: 0.0 Total: 0.2747586
-
-Goal: RestOn(couch) CulturalUtilitity: 0.34862834 Competence: 0.8455993 Urgency: 0.0 Total: 0.2947999
-
-Goal: RestOn(couch) CulturalUtilitity: 0.37456405 Competence: 0.8421605 Urgency: 0.0 Total: 0.31544307
-
-Goal: RestOn(couch) CulturalUtilitity: 0.40137732 Competence: 0.83875597 Urgency: 0.0 Total: 0.3366576
-
-Goal: RestOn(couch) CulturalUtilitity: 0.42904046 Competence: 0.8353853 Urgency: 0.0 Total: 0.3584141
-
-Goal: RestOn(couch) CulturalUtilitity: 0.45752624 Competence: 0.8320481 Urgency: 0.0 Total: 0.38068384
-
-Goal: RestOn(couch) CulturalUtilitity: 0.48680773 Competence: 0.82874423 Urgency: 0.0 Total: 0.4034391
-
-Goal: RestOn(couch) CulturalUtilitity: 0.52296007 Competence: 0.82482284 Urgency: 0.0 Total: 0.4313494
+Goal: RestOn(couch) CulturalUtilitity: 0.117266394 Competence: 0.88950413 Urgency: 0.0 Total: 0.10430894

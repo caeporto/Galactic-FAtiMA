@@ -25,6 +25,8 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
@@ -47,11 +49,8 @@ public class Controller {
     private static final String[] ag_modules = {"MaslowHierarchy", "MotivationalState", "SocialRelations", "AdvancedMemory", "EmotionalIntelligence", "ToM", "CulturalDimensionsComponent", "EmpathyComponent"};
     private static String agentName;
 
-    //Needs
-    private Model foodModel = new Model(), liquidModel = new Model(), sleepModel = new Model();
-
-    //Emotions
-    private Model moodModel = new Model();
+    //Data - Needs - Emotions - Goals(...)
+    private Model dataModel = new Model();
 
     private static final Image image = new Image("spritesheetBully.png");
 
@@ -64,33 +63,40 @@ public class Controller {
 
     private Animation animation;
 
-    @FXML
-    private javafx.scene.control.Label foodLabel;
+    @FXML private javafx.scene.control.Label foodLabel;
+    @FXML private javafx.scene.control.Label foodLabelMS;
 
-    @FXML
-    private javafx.scene.control.Label liquidLabel;
+    @FXML private javafx.scene.control.Label liquidLabel;
+    @FXML private javafx.scene.control.Label liquidLabelMS;
 
-    @FXML
-    private javafx.scene.control.Label sleepLabel;
+    @FXML private javafx.scene.control.Label sleepLabel;
+    @FXML private javafx.scene.control.Label sleepLabelMS;
 
-    @FXML
-    private javafx.scene.control.Label moodLabel;
+    @FXML private javafx.scene.control.Label moodLabel;
 
-    @FXML
-    private ImageView Monster;
+    @FXML private ImageView Monster;
 
-    @FXML
-    private javafx.scene.layout.VBox emotionPanel;
+    @FXML private javafx.scene.layout.VBox emotionsBox;
+
+    @FXML private ProgressBar moodBar;
 
     private static Iterator<ActiveEmotion> currentActiveEmotions; //used to display current active emotions
 
     public void initialize(){
         System.out.println("Controller initialized.");
 
-        foodLabel.textProperty().bind(foodModel.dadoTesteProperty());
-        liquidLabel.textProperty().bind(liquidModel.dadoTesteProperty());
-        sleepLabel.textProperty().bind(sleepModel.dadoTesteProperty());
-        moodLabel.textProperty().bind(moodModel.dadoTesteProperty());
+        foodLabel.textProperty().bind(dataModel.foodValueProperty());
+        foodLabelMS.textProperty().bind(dataModel.foodValueProperty());
+
+        liquidLabel.textProperty().bind(dataModel.liquidValueProperty());
+        liquidLabelMS.textProperty().bind(dataModel.liquidValueProperty());
+
+        sleepLabel.textProperty().bind(dataModel.sleepValueProperty());
+        sleepLabelMS.textProperty().bind(dataModel.sleepValueProperty());
+
+        moodLabel.textProperty().bind(dataModel.moodValueProperty());
+
+
 
         String xml = View.arguments[0];
         String scenery = View.arguments[1];
@@ -204,15 +210,15 @@ public class Controller {
                 switch(i){
                     case 0: //Food
                         Float foodIntensity = mot.GetIntensity();
-                        foodModel.setDadoTeste(Float.toString(foodIntensity));
+                        dataModel.setFoodValue("Food : " + Float.toString(foodIntensity));
                         break;
                     case 1: //Liquid
                         Float liquidIntensity = mot.GetIntensity();
-                        liquidModel.setDadoTeste(Float.toString(liquidIntensity));
+                        dataModel.setLiquidValue("Liquid : " + Float.toString(liquidIntensity));
                         break;
                     case 2: //Sleep
                         Float sleepIntensity = mot.GetIntensity();
-                        sleepModel.setDadoTeste(Float.toString(sleepIntensity));
+                        dataModel.setSleepValue("Sleep : " + Float.toString(sleepIntensity));
                         break;
                     case 3:
                         break;
@@ -232,7 +238,7 @@ public class Controller {
         EmotionalState state = ag.getEmotionalState();
         Float mood = state.GetMood(); //mood
         Iterator<ActiveEmotion> active_emotions = state.GetEmotionsIterator(); //set of currently active emotions
-        //emotionPanel.getChildren().removeAll();
+        emotionsBox.getChildren().removeAll();
         for (; active_emotions.hasNext(); ) {
             ActiveEmotion emotion = active_emotions.next();
             String emotion_name = emotion.getType();
@@ -242,13 +248,12 @@ public class Controller {
             String action = event.GetAction();
             String subject = event.GetSubject();
             String target = event.GetTarget();
-            //emotionPanel.getChildren().add(null);
-            System.err.println("Active Emotion: "+emotion_name+" Intensity: "+intensity+" Who is Feeling: "+agentName+" Against who: "+direction.GetFirstLiteral().getName());
-            System.err.println("Felt on Action: "+action+" Subject: "+subject+" target: "+target);
+            emotionsBox.getChildren().add(new Label("Testando")); // nome da emotion, nome do agent, action, subject, target?
+            //System.err.println("Active Emotion: "+emotion_name+" Intensity: "+intensity+" Who is Feeling: "+agentName+" Against who: "+direction.GetFirstLiteral().getName());
+            //System.err.println("Felt on Action: "+action+" Subject: "+subject+" target: "+target);
         }
-        moodModel.setDadoTeste("Mood "+Float.toString(mood));
-        ////System.out.println(intensity);
-        //prototypeModel.setDadoTeste(Float.toString(intensity));
+        dataModel.setMoodValue("Mood: "+Float.toString(mood));
+        moodBar.setProgress(mood);
     }
 
     public void updateGoals(){

@@ -29,7 +29,18 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Galactic-FAtiMA" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Layout.fxml" pinned="false" current-in-tab="false">
@@ -38,9 +49,40 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="2715">
-              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="3146">
+              <caret line="154" column="25" lean-forward="false" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="52" />
+              <folding>
+                <marker date="1484924204310" expanded="true" signature="7530:7576" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7530:7607" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7530:7636" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7530:8351" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7530:8369" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7661:8322" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7739:8296" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="7771:8050" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8086:8158" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8189:8270" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8410:9412" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8438:9394" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8466:9238" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8586:9209" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8624:9178" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8879:9076" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="8925:9037" ph="..." />
+                <marker date="1484924204310" expanded="true" signature="9263:9365" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interface/src/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <folding>
+                <element signature="docComment;class#Model#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,36 +90,18 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="258" column="0" lean-forward="true" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5816#6333#0" expanded="true" />
-                <element signature="e#6332#6333#0" expanded="true" />
-                <element signature="e#10116#10124#0" expanded="true" />
-                <element signature="e#13384#13495#0" expanded="true" />
-                <element signature="e#13494#13495#0" expanded="true" />
-                <element signature="e#14360#14368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoalLibrary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/GoalLibrary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="723">
+              <caret line="82" column="64" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmotionalState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/emotionalState/EmotionalState.java">
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interface/src/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3630">
-              <caret line="317" column="5" lean-forward="false" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -86,7 +110,7 @@
       <file leaf-file-name="EmotionalStatePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/Display/EmotionalStatePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
+            <state relative-caret-position="814">
               <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
               <folding />
             </state>
@@ -96,9 +120,23 @@
       <file leaf-file-name="EmpathyComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.Empathy/src/FAtiMA/empathy/EmpathyComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="88">
               <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1637#1638#0" expanded="false" />
+                <element signature="e#1655#1656#0" expanded="false" />
+                <element signature="e#4675#4688#0" expanded="false" />
+                <element signature="e#6425#6433#0" expanded="false" />
+                <element signature="e#7890#7891#0" expanded="false" />
+                <element signature="e#7920#7921#0" expanded="false" />
+                <element signature="e#7986#7987#0" expanded="false" />
+                <element signature="e#8033#8034#0" expanded="false" />
+                <element signature="e#8071#8072#0" expanded="false" />
+                <element signature="e#8119#8120#0" expanded="false" />
+                <element signature="e#8197#8198#0" expanded="false" />
+                <element signature="e#8240#8241#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,9 +144,26 @@
       <file leaf-file-name="Motivator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/Motivator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="264">
               <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#0#5988#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2409#2410#0" expanded="false" />
+                <element signature="e#2433#2434#0" expanded="false" />
+                <element signature="e#2467#2468#0" expanded="false" />
+                <element signature="e#2492#2493#0" expanded="false" />
+                <element signature="e#2663#2664#0" expanded="false" />
+                <element signature="e#2682#2683#0" expanded="false" />
+                <element signature="e#2820#2821#0" expanded="false" />
+                <element signature="e#2842#2843#0" expanded="false" />
+                <element signature="e#2884#2885#0" expanded="false" />
+                <element signature="e#2935#2936#0" expanded="false" />
+                <element signature="e#3082#3083#0" expanded="false" />
+                <element signature="e#3107#3108#0" expanded="false" />
+                <element signature="e#3290#3291#0" expanded="false" />
+                <element signature="e#3322#3323#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,9 +171,21 @@
       <file leaf-file-name="DrivesDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/DrivesDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
+            <state relative-caret-position="1958">
               <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#12019#12020#0" expanded="false" />
+                <element signature="e#12052#12053#0" expanded="false" />
+                <element signature="e#12088#12089#0" expanded="false" />
+                <element signature="e#12114#12115#0" expanded="false" />
+                <element signature="e#12157#12158#0" expanded="false" />
+                <element signature="e#12190#12191#0" expanded="false" />
+                <element signature="e#12226#12227#0" expanded="false" />
+                <element signature="e#12252#12253#0" expanded="false" />
+                <element signature="e#12293#12294#0" expanded="false" />
+                <element signature="e#12324#12325#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,9 +193,22 @@
       <file leaf-file-name="MotivationalComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/MotivationalComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6030">
+            <state relative-caret-position="8844">
               <caret line="439" column="42" lean-forward="false" selection-start-line="439" selection-start-column="42" selection-end-line="439" selection-end-column="42" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#8129#8130#0" expanded="false" />
+                <element signature="e#8163#8164#0" expanded="false" />
+                <element signature="e#16605#16606#0" expanded="false" />
+                <element signature="e#16639#16640#0" expanded="false" />
+                <element signature="e#16699#16700#0" expanded="false" />
+                <element signature="e#16733#16734#0" expanded="false" />
+                <element signature="e#18156#18157#0" expanded="false" />
+                <element signature="e#18196#18197#0" expanded="false" />
+                <element signature="e#20076#20077#0" expanded="false" />
+                <element signature="e#20094#20095#0" expanded="false" />
+                <element signature="e#32523#32540#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,9 +216,14 @@
       <file leaf-file-name="PhysiologyNeeds.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/PhysiologyNeeds.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="330">
               <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding />
+              <folding>
+                <element signature="e#769#770#0" expanded="false" />
+                <element signature="e#788#789#0" expanded="false" />
+                <element signature="e#834#835#0" expanded="false" />
+                <element signature="e#860#861#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,10 +263,11 @@
         <option value="$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/AgentCore.java" />
         <option value="$PROJECT_DIR$/Interface/src/Launcher.java" />
         <option value="$PROJECT_DIR$/Interface/src/AgentLauncher.java" />
-        <option value="$PROJECT_DIR$/Interface/src/View.java" />
         <option value="$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/PhysiologyNeeds.java" />
-        <option value="$PROJECT_DIR$/Interface/src/Layout.fxml" />
         <option value="$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/emotionalState/EmotionalState.java" />
+        <option value="$PROJECT_DIR$/Interface/src/View.java" />
+        <option value="$PROJECT_DIR$/Interface/src/Model.java" />
+        <option value="$PROJECT_DIR$/Interface/src/Layout.fxml" />
         <option value="$PROJECT_DIR$/Interface/src/Controller.java" />
       </list>
     </option>
@@ -193,9 +279,26 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="721" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1060" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Java</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -212,6 +315,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,65 +343,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Galactic-FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Galactic-FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Galactic-FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FAtiMA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -752,45 +805,56 @@
       <workItem from="1484780761942" duration="1359000" />
       <workItem from="1484787172190" duration="4839000" />
       <workItem from="1484834384394" duration="253000" />
+      <workItem from="1484842795941" duration="3245000" />
+      <workItem from="1484920814325" duration="6266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33088000" />
+    <option name="totallyTimeSpent" value="42599000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="721" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22109374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -802,7 +866,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -810,40 +876,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Interface/src/Layout.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3542">
-          <caret line="161" column="4" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/src/SpriteAnimation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5816#6333#0" expanded="true" />
-            <element signature="e#6332#6333#0" expanded="true" />
-            <element signature="e#10116#10124#0" expanded="true" />
-            <element signature="e#13384#13495#0" expanded="true" />
-            <element signature="e#13494#13495#0" expanded="true" />
-            <element signature="e#14360#14368#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +888,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1655#1656#0" expanded="false" />
+            <element signature="e#4675#4688#0" expanded="false" />
+            <element signature="e#6425#6433#0" expanded="false" />
+            <element signature="e#7890#7891#0" expanded="false" />
+            <element signature="e#7920#7921#0" expanded="false" />
+            <element signature="e#7986#7987#0" expanded="false" />
+            <element signature="e#8033#8034#0" expanded="false" />
+            <element signature="e#8071#8072#0" expanded="false" />
+            <element signature="e#8119#8120#0" expanded="false" />
+            <element signature="e#8197#8198#0" expanded="false" />
+            <element signature="e#8240#8241#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +910,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#0#5988#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2409#2410#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2467#2468#0" expanded="false" />
+            <element signature="e#2492#2493#0" expanded="false" />
+            <element signature="e#2663#2664#0" expanded="false" />
+            <element signature="e#2682#2683#0" expanded="false" />
+            <element signature="e#2820#2821#0" expanded="false" />
+            <element signature="e#2842#2843#0" expanded="false" />
+            <element signature="e#2884#2885#0" expanded="false" />
+            <element signature="e#2935#2936#0" expanded="false" />
+            <element signature="e#3082#3083#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3290#3291#0" expanded="false" />
+            <element signature="e#3322#3323#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -867,7 +935,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
           <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#12019#12020#0" expanded="false" />
+            <element signature="e#12052#12053#0" expanded="false" />
+            <element signature="e#12088#12089#0" expanded="false" />
+            <element signature="e#12114#12115#0" expanded="false" />
+            <element signature="e#12157#12158#0" expanded="false" />
+            <element signature="e#12190#12191#0" expanded="false" />
+            <element signature="e#12226#12227#0" expanded="false" />
+            <element signature="e#12252#12253#0" expanded="false" />
+            <element signature="e#12293#12294#0" expanded="false" />
+            <element signature="e#12324#12325#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,7 +955,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8129#8130#0" expanded="false" />
+            <element signature="e#8163#8164#0" expanded="false" />
+            <element signature="e#16605#16606#0" expanded="false" />
+            <element signature="e#16639#16640#0" expanded="false" />
+            <element signature="e#16699#16700#0" expanded="false" />
+            <element signature="e#16733#16734#0" expanded="false" />
+            <element signature="e#18156#18157#0" expanded="false" />
+            <element signature="e#18196#18197#0" expanded="false" />
+            <element signature="e#20076#20077#0" expanded="false" />
+            <element signature="e#20094#20095#0" expanded="false" />
+            <element signature="e#32523#32540#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,15 +1002,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5816#6333#0" expanded="true" />
-            <element signature="e#6332#6333#0" expanded="true" />
-            <element signature="e#10116#10124#0" expanded="true" />
-            <element signature="e#13384#13495#0" expanded="true" />
-            <element signature="e#13494#13495#0" expanded="true" />
-            <element signature="e#14360#14368#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +1010,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1655#1656#0" expanded="false" />
+            <element signature="e#4675#4688#0" expanded="false" />
+            <element signature="e#6425#6433#0" expanded="false" />
+            <element signature="e#7890#7891#0" expanded="false" />
+            <element signature="e#7920#7921#0" expanded="false" />
+            <element signature="e#7986#7987#0" expanded="false" />
+            <element signature="e#8033#8034#0" expanded="false" />
+            <element signature="e#8071#8072#0" expanded="false" />
+            <element signature="e#8119#8120#0" expanded="false" />
+            <element signature="e#8197#8198#0" expanded="false" />
+            <element signature="e#8240#8241#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -933,7 +1032,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#0#5988#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2409#2410#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2467#2468#0" expanded="false" />
+            <element signature="e#2492#2493#0" expanded="false" />
+            <element signature="e#2663#2664#0" expanded="false" />
+            <element signature="e#2682#2683#0" expanded="false" />
+            <element signature="e#2820#2821#0" expanded="false" />
+            <element signature="e#2842#2843#0" expanded="false" />
+            <element signature="e#2884#2885#0" expanded="false" />
+            <element signature="e#2935#2936#0" expanded="false" />
+            <element signature="e#3082#3083#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3290#3291#0" expanded="false" />
+            <element signature="e#3322#3323#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -941,7 +1057,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
           <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#12019#12020#0" expanded="false" />
+            <element signature="e#12052#12053#0" expanded="false" />
+            <element signature="e#12088#12089#0" expanded="false" />
+            <element signature="e#12114#12115#0" expanded="false" />
+            <element signature="e#12157#12158#0" expanded="false" />
+            <element signature="e#12190#12191#0" expanded="false" />
+            <element signature="e#12226#12227#0" expanded="false" />
+            <element signature="e#12252#12253#0" expanded="false" />
+            <element signature="e#12293#12294#0" expanded="false" />
+            <element signature="e#12324#12325#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -949,7 +1077,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8129#8130#0" expanded="false" />
+            <element signature="e#8163#8164#0" expanded="false" />
+            <element signature="e#16605#16606#0" expanded="false" />
+            <element signature="e#16639#16640#0" expanded="false" />
+            <element signature="e#16699#16700#0" expanded="false" />
+            <element signature="e#16733#16734#0" expanded="false" />
+            <element signature="e#18156#18157#0" expanded="false" />
+            <element signature="e#18196#18197#0" expanded="false" />
+            <element signature="e#20076#20077#0" expanded="false" />
+            <element signature="e#20094#20095#0" expanded="false" />
+            <element signature="e#32523#32540#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -976,7 +1117,26 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1484924204310" expanded="true" signature="7530:7576" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:7607" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:7636" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:8351" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:8369" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7661:8322" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7739:8296" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7771:8050" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8086:8158" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8189:8270" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8410:9412" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8438:9394" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8466:9238" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8586:9209" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8624:9178" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8879:9076" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8925:9037" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="9263:9365" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -992,15 +1152,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5816#6333#0" expanded="true" />
-            <element signature="e#6332#6333#0" expanded="true" />
-            <element signature="e#10116#10124#0" expanded="true" />
-            <element signature="e#13384#13495#0" expanded="true" />
-            <element signature="e#13494#13495#0" expanded="true" />
-            <element signature="e#14360#14368#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,13 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/src/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1110,10 +1255,140 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java" />
+    <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/GoalLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/emotionalState/EmotionalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5324">
+          <caret line="317" column="5" lean-forward="false" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA.Empathy/src/FAtiMA/empathy/EmpathyComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1655#1656#0" expanded="false" />
+            <element signature="e#4675#4688#0" expanded="false" />
+            <element signature="e#6425#6433#0" expanded="false" />
+            <element signature="e#7890#7891#0" expanded="false" />
+            <element signature="e#7920#7921#0" expanded="false" />
+            <element signature="e#7986#7987#0" expanded="false" />
+            <element signature="e#8033#8034#0" expanded="false" />
+            <element signature="e#8071#8072#0" expanded="false" />
+            <element signature="e#8119#8120#0" expanded="false" />
+            <element signature="e#8197#8198#0" expanded="false" />
+            <element signature="e#8240#8241#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/Motivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#5988#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2409#2410#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2467#2468#0" expanded="false" />
+            <element signature="e#2492#2493#0" expanded="false" />
+            <element signature="e#2663#2664#0" expanded="false" />
+            <element signature="e#2682#2683#0" expanded="false" />
+            <element signature="e#2820#2821#0" expanded="false" />
+            <element signature="e#2842#2843#0" expanded="false" />
+            <element signature="e#2884#2885#0" expanded="false" />
+            <element signature="e#2935#2936#0" expanded="false" />
+            <element signature="e#3082#3083#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3290#3291#0" expanded="false" />
+            <element signature="e#3322#3323#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/DrivesDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#12019#12020#0" expanded="false" />
+            <element signature="e#12052#12053#0" expanded="false" />
+            <element signature="e#12088#12089#0" expanded="false" />
+            <element signature="e#12114#12115#0" expanded="false" />
+            <element signature="e#12157#12158#0" expanded="false" />
+            <element signature="e#12190#12191#0" expanded="false" />
+            <element signature="e#12226#12227#0" expanded="false" />
+            <element signature="e#12252#12253#0" expanded="false" />
+            <element signature="e#12293#12294#0" expanded="false" />
+            <element signature="e#12324#12325#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/MotivationalComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8844">
+          <caret line="439" column="42" lean-forward="false" selection-start-line="439" selection-start-column="42" selection-end-line="439" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8129#8130#0" expanded="false" />
+            <element signature="e#8163#8164#0" expanded="false" />
+            <element signature="e#16605#16606#0" expanded="false" />
+            <element signature="e#16639#16640#0" expanded="false" />
+            <element signature="e#16699#16700#0" expanded="false" />
+            <element signature="e#16733#16734#0" expanded="false" />
+            <element signature="e#18156#18157#0" expanded="false" />
+            <element signature="e#18196#18197#0" expanded="false" />
+            <element signature="e#20076#20077#0" expanded="false" />
+            <element signature="e#20094#20095#0" expanded="false" />
+            <element signature="e#32523#32540#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/PhysiologyNeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#788#789#0" expanded="false" />
+            <element signature="e#834#835#0" expanded="false" />
+            <element signature="e#860#861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Interface/src/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="249">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1123,88 +1398,53 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="2715">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="258" column="0" lean-forward="true" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+        <state relative-caret-position="3146">
+          <caret line="154" column="25" lean-forward="false" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5816#6333#0" expanded="true" />
-            <element signature="e#6332#6333#0" expanded="true" />
-            <element signature="e#10116#10124#0" expanded="true" />
-            <element signature="e#13384#13495#0" expanded="true" />
-            <element signature="e#13494#13495#0" expanded="true" />
-            <element signature="e#14360#14368#0" expanded="true" />
+            <marker date="1484924204310" expanded="true" signature="7530:7576" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:7607" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:7636" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:8351" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7530:8369" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7661:8322" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7739:8296" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="7771:8050" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8086:8158" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8189:8270" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8410:9412" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8438:9394" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8466:9238" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8586:9209" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8624:9178" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8879:9076" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="8925:9037" ph="..." />
+            <marker date="1484924204310" expanded="true" signature="9263:9365" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/GoalLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/emotionalState/EmotionalState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="317" column="5" lean-forward="false" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/Display/EmotionalStatePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
+        <state relative-caret-position="814">
           <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA.Empathy/src/FAtiMA/empathy/EmpathyComponent.java">
+    <entry file="file://$PROJECT_DIR$/Interface/src/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;class#Model#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/Motivator.java">
+    <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/DrivesDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/MotivationalComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6030">
-          <caret line="439" column="42" lean-forward="false" selection-start-line="439" selection-start-column="42" selection-end-line="439" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FAtiMA.MotivationalSystem/src/FAtiMA/maslowHierarchyOfNeeds/PhysiologyNeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="723">
+          <caret line="82" column="64" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="64" />
           <folding />
         </state>
       </provider>
