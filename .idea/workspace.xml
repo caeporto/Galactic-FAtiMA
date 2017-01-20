@@ -32,12 +32,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-888">
-              <caret line="360" column="45" lean-forward="false" selection-start-line="360" selection-start-column="45" selection-end-line="360" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="724">
+              <caret line="237" column="69" lean-forward="false" selection-start-line="237" selection-start-column="69" selection-end-line="237" selection-end-column="69" />
+              <folding>
+                <element signature="docComment;class#Controller#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +47,7 @@
       <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/wellFormedNames/Symbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
+            <state relative-caret-position="616">
               <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding />
             </state>
@@ -55,7 +57,7 @@
       <file leaf-file-name="Name.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/wellFormedNames/Name.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="2706">
               <caret line="161" column="40" lean-forward="false" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
               <folding />
             </state>
@@ -65,7 +67,7 @@
       <file leaf-file-name="DeliberativeComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/DeliberativeComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="550">
               <caret line="192" column="51" lean-forward="false" selection-start-line="192" selection-start-column="39" selection-end-line="192" selection-end-column="51" />
               <folding>
                 <element signature="e#30072#30073#0" expanded="true" />
@@ -78,7 +80,7 @@
       <file leaf-file-name="Intention.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/Intention.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="462">
               <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="34" />
               <folding />
             </state>
@@ -88,32 +90,67 @@
       <file leaf-file-name="IntentionDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/display/IntentionDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="2002">
               <caret line="128" column="45" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="128" selection-end-column="45" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4140#4141#0" expanded="false" />
+                <element signature="e#4169#4170#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Layout.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Layout.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interface/src/Layout.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+            <state relative-caret-position="622">
+              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
-                <marker date="1484933582000" expanded="true" signature="9069:9171" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2357:2726" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2508:2697" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2546:2661" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2815:4237" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2840:4219" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2864:4079" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="2979:4054" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3011:4028" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3239:3399" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3276:3366" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3503:3663" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3540:3630" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3765:3939" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="3802:3906" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4100:4193" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4276:5681" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4304:5663" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4332:4948" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4473:4919" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4511:4888" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="4973:5634" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5051:5608" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5083:5362" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5398:5470" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5501:5582" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5722:6612" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5750:6594" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5778:6438" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5898:6409" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="5936:6378" ph="..." />
+                <marker date="1484935549736" expanded="true" signature="6463:6565" ph="..." />
               </folding>
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Goal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/Goal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="1914">
               <caret line="157" column="20" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="157" selection-end-column="20" />
               <folding />
             </state>
@@ -123,7 +160,7 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interface/src/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="110">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
@@ -133,9 +170,14 @@
       <file leaf-file-name="GoalsPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/display/GoalsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="1892">
               <caret line="135" column="84" lean-forward="false" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="84" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2967#2968#0" expanded="false" />
+                <element signature="e#2986#2987#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,8 +224,8 @@
         <option value="$PROJECT_DIR$/Interface/src/View.java" />
         <option value="$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/GoalLibrary.java" />
         <option value="$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/DeliberativeComponent.java" />
-        <option value="$PROJECT_DIR$/Interface/src/Layout.fxml" />
         <option value="$PROJECT_DIR$/Interface/src/Controller.java" />
+        <option value="$PROJECT_DIR$/Interface/src/Layout.fxml" />
       </list>
     </option>
   </component>
@@ -194,8 +236,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -212,8 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -243,6 +283,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,19 +751,20 @@
       <workItem from="1484911463680" duration="1329000" />
       <workItem from="1484913053878" duration="4667000" />
       <workItem from="1484928876248" duration="5253000" />
+      <workItem from="1484934698259" duration="1127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46994000" />
+    <option name="totallyTimeSpent" value="48121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28137255" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,10 +781,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2815405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28137255" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22109374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -781,7 +824,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Controller#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3630">
           <caret line="317" column="5" lean-forward="false" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,18 +997,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="3147" column="0" lean-forward="false" selection-start-line="3147" selection-start-column="0" selection-end-line="3147" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/ActionLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="144" column="47" lean-forward="false" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,9 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding>
-            <element signature="e#8728#8729#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,55 +1023,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6675">
-          <caret line="508" column="0" lean-forward="false" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#84225#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#10144#10145#0" expanded="false" />
-            <element signature="e#10181#10182#0" expanded="false" />
-            <element signature="e#11991#11992#0" expanded="false" />
-            <element signature="e#12045#12046#0" expanded="false" />
-            <element signature="e#12720#12721#0" expanded="false" />
-            <element signature="e#12790#12791#0" expanded="false" />
-            <element signature="e#37807#37808#0" expanded="false" />
-            <element signature="e#37839#37840#0" expanded="false" />
-            <element signature="e#40716#40717#0" expanded="false" />
-            <element signature="e#40753#40754#0" expanded="false" />
-            <element signature="e#44527#44528#0" expanded="false" />
-            <element signature="e#44554#44555#0" expanded="false" />
-            <element signature="e#48436#48437#0" expanded="false" />
-            <element signature="e#48499#48500#0" expanded="false" />
-            <element signature="e#48546#48547#0" expanded="false" />
-            <element signature="e#48604#48605#0" expanded="false" />
-            <element signature="e#48747#48748#0" expanded="false" />
-            <element signature="e#48811#48812#0" expanded="false" />
-            <element signature="e#63283#63284#0" expanded="false" />
-            <element signature="e#63310#63311#0" expanded="false" />
-            <element signature="e#66057#66058#0" expanded="false" />
-            <element signature="e#66137#66138#0" expanded="false" />
-            <element signature="e#70537#70538#0" expanded="false" />
-            <element signature="e#70627#70628#0" expanded="false" />
-            <element signature="e#83683#83684#0" expanded="false" />
-            <element signature="e#83719#83720#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaPanelUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaPanelUI.class" />
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/AgentCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4155">
@@ -1050,10 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,13 +1054,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Interface/src/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="110">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
@@ -1083,7 +1067,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/goals/Goal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="1914">
           <caret line="157" column="20" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="157" selection-end-column="20" />
           <folding />
         </state>
@@ -1091,23 +1075,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/display/GoalsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="1892">
           <caret line="135" column="84" lean-forward="false" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="84" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2967#2968#0" expanded="false" />
+            <element signature="e#2986#2987#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/display/IntentionDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="2002">
           <caret line="128" column="45" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="128" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4140#4141#0" expanded="false" />
+            <element signature="e#4169#4170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/Intention.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="462">
           <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="34" />
           <folding />
         </state>
@@ -1115,28 +1109,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/wellFormedNames/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="616">
           <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/src/Layout.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <marker date="1484933582000" expanded="true" signature="9069:9171" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA.DeliberativeComponent/src/FAtiMA/DeliberativeComponent/DeliberativeComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="550">
           <caret line="192" column="51" lean-forward="false" selection-start-line="192" selection-start-column="39" selection-end-line="192" selection-end-column="51" />
           <folding>
             <element signature="e#30072#30073#0" expanded="true" />
@@ -1147,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FAtiMA/src/FAtiMA/Core/wellFormedNames/Name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="2706">
           <caret line="161" column="40" lean-forward="false" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
           <folding />
         </state>
@@ -1155,10 +1136,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interface/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
-          <caret line="360" column="45" lean-forward="false" selection-start-line="360" selection-start-column="45" selection-end-line="360" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="724">
+          <caret line="237" column="69" lean-forward="false" selection-start-line="237" selection-start-column="69" selection-end-line="237" selection-end-column="69" />
+          <folding>
+            <element signature="docComment;class#Controller#0" expanded="false" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/src/Layout.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <marker date="1484935549736" expanded="true" signature="2357:2726" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2508:2697" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2546:2661" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2815:4237" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2840:4219" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2864:4079" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="2979:4054" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3011:4028" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3239:3399" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3276:3366" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3503:3663" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3540:3630" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3765:3939" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="3802:3906" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4100:4193" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4276:5681" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4304:5663" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4332:4948" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4473:4919" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4511:4888" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="4973:5634" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5051:5608" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5083:5362" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5398:5470" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5501:5582" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5722:6612" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5750:6594" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5778:6438" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5898:6409" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="5936:6378" ph="..." />
+            <marker date="1484935549736" expanded="true" signature="6463:6565" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

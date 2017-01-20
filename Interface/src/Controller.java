@@ -67,12 +67,15 @@ public class Controller {
 
     @FXML private javafx.scene.control.Label foodLabel;
     @FXML private javafx.scene.control.Label foodLabelMS;
+    @FXML private ProgressBar foodBarMonster;
 
     @FXML private javafx.scene.control.Label liquidLabel;
     @FXML private javafx.scene.control.Label liquidLabelMS;
+    @FXML private ProgressBar liquidBarMonster;
 
     @FXML private javafx.scene.control.Label sleepLabel;
     @FXML private javafx.scene.control.Label sleepLabelMS;
+    @FXML private ProgressBar sleepBarMonster;
 
     @FXML private javafx.scene.control.Label moodLabel;
 
@@ -222,14 +225,17 @@ public class Controller {
                     case 0: //Food
                         Float foodIntensity = mot.GetIntensity();
                         dataModel.setFoodValue("Food : " + Float.toString(foodIntensity));
+                        foodBarMonster.setProgress(foodIntensity/10);
                         break;
                     case 1: //Liquid
                         Float liquidIntensity = mot.GetIntensity();
                         dataModel.setLiquidValue("Liquid : " + Float.toString(liquidIntensity));
+                        liquidBarMonster.setProgress(liquidIntensity/10);
                         break;
                     case 2: //Sleep
                         Float sleepIntensity = mot.GetIntensity();
                         dataModel.setSleepValue("Sleep : " + Float.toString(sleepIntensity));
+                        sleepBarMonster.setProgress(sleepIntensity/10);
                         break;
                     case 3:
                         break;

@@ -18,74 +18,30 @@
            <Tab text="Monster">
                <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
                    <left>
-                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+                       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                            <Label fx:id="foodLabel" alignment="CENTER" text="Food" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.5" fx:id="xProgressBar">
+                           <ProgressBar fx:id="foodBarMonster" prefWidth="200.0" progress="0.5">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
                            <Label fx:id="liquidLabel" alignment="CENTER" text="Liquid" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.82">
+                           <ProgressBar fx:id="liquidBarMonster" prefWidth="200.0" progress="0.82">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
                            <Label fx:id="sleepLabel" alignment="CENTER" text="Sleep" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.57">
+                           <ProgressBar fx:id="sleepBarMonster" prefWidth="200.0" progress="0.57">
                                <padding>
                                    <Insets left="5.0" right="5.0" />
                                </padding>
                            </ProgressBar>
-                           <Label alignment="CENTER" text="Value W" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.48">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label alignment="CENTER" text="Value K" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.7">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label fx:id="testLabel" text="Test" />
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
                        </VBox>
                    </left>
-                   <right>
-                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="60.0" BorderPane.alignment="CENTER">
-                           <Label alignment="CENTER" text="Value X" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.6">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label alignment="CENTER" text="Value Y" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="1.0">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label alignment="CENTER" text="Value Z" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.39">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label alignment="CENTER" text="Value W" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.18">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                           <Label alignment="CENTER" text="Value K" textAlignment="JUSTIFY" />
-                           <ProgressBar prefWidth="200.0" progress="0.21">
-                               <padding>
-                                   <Insets left="5.0" right="5.0" />
-                               </padding>
-                           </ProgressBar>
-                       </VBox>
-                   </right>
                    <center>
                        <ImageView fx:id="Monster" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
                            <viewport>
@@ -160,10 +116,10 @@
                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                                <Separator prefWidth="200.0" />
-                        <VBox fx:id="goalsBox" prefHeight="200.0" prefWidth="100.0" />
+                        <VBox fx:id="goalsBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" />
                                <Separator prefWidth="200.0" />
                         <Label text="Intentions" />
-                        <VBox fx:id="intentionsBox" prefHeight="200.0" prefWidth="100.0" />
+                        <VBox fx:id="intentionsBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" />
                            </children>
                        </VBox>
                    </center>
