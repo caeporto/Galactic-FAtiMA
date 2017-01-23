@@ -21,14 +21,16 @@ import FAtiMA.maslowHierarchyOfNeeds.MotivationalComponent;
 import FAtiMA.maslowHierarchyOfNeeds.Motivator;
 import FAtiMA.maslowHierarchyOfNeeds.MotivatorHierarchy;
 import FAtiMA.socialRelations.SocialRelationsComponent;
-import com.sun.org.apache.bcel.internal.generic.GOTO;
 import javafx.animation.Animation;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.ChoiceBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
@@ -88,6 +90,11 @@ public class Controller {
     @FXML private javafx.scene.layout.VBox intentionsBox;
 
     @FXML private ProgressBar moodBar;
+
+    //Enviroment
+    @FXML private TextField textFieldEnv;
+    @FXML private ChoiceBoxListCell choiceBoxEnv; // ChoiceBoxListCell<E>
+    @FXML private Button buttonEnv;
 
     private static HashMap<String, Label> currentActiveEmotions; //used to display current active emotions
     private static HashMap<String, Label> currentActiveIntentions; //used to display current active intentions

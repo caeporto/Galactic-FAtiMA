@@ -145,7 +145,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
 
 Reporting property changed: PROPERTY-CHANGED Luke()0.0
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7164545 Competence: 0.69800997 Urgency: 0.0 Total: 1.8961123
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.7322311 Competence: 0.6976143 Urgency: 0.0 Total: 1.9060435
 
 Adding 1st level intention: Eat(cheeseburger)
 
@@ -229,9 +229,9 @@ Luke: Processing message: ACTION-FINISHED Luke look-at user
 
 appraising event: EVENT(Luke,look-at,user)
 
-Goal: RestOn(couch) CulturalUtilitity: 2.5476239 Competence: 0.6972195 Urgency: 0.0 Total: 1.776253
+Goal: Drink(coke) CulturalUtilitity: 3.2861152 Competence: 0.6968255 Urgency: 0.0 Total: 2.2898488
 
-Goal: RestOn(couch) CulturalUtilitity: 2.5560882 Competence: 0.6968255 Urgency: 0.0 Total: 1.7811475
+Goal: Drink(coke) CulturalUtilitity: 3.2982495 Competence: 0.69643223 Urgency: 0.0 Total: 2.2970073
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
@@ -271,13 +271,13 @@ Sending action for execution: Drink coke
 
 Cannot act now!
 
-Goal: RestOn(couch) CulturalUtilitity: 1.9827049 Competence: 0.77232414 Urgency: 0.0 Total: 1.5312909
-
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
 PropertyChanged: * Luke(drankLiquid) True
 
 Reporting property changed: PROPERTY-CHANGED Luke(drankLiquid)True
+
+Goal: Drink(coke) CulturalUtilitity: 2.301675 Competence: 1.0 Urgency: 0.0 Total: 2.301675
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
@@ -303,8 +303,6 @@ Sending action for execution: RestOn couch
 
 Cannot act now!
 
-Goal: RestOn(couch) CulturalUtilitity: 1.6391274 Competence: 1.0 Urgency: 0.0 Total: 1.6391274
-
 Luke: Processing message: ACTION-FINISHED Luke RestOn couch
 
 can act now!
@@ -314,37 +312,3 @@ appraising event: EVENT(Luke,RestOn,couch)
 Updating motivator Rest
 
 Updating motivator PhysiologicalSafety
-
-Adding 1st level intention: RestOn(couch)
-
-Adding a new Intention: RestOn(couch)
-
-Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
-
-Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
-
-Sending action for execution: RestOn couch
-
-Cannot act now!
-
-Luke: Processing message: ACTION-FINISHED Luke RestOn couch
-
-can act now!
-
-appraising event: EVENT(Luke,RestOn,couch)
-
-Updating motivator Rest
-
-Updating motivator PhysiologicalSafety
-
-Goal: RestOn(couch) CulturalUtilitity: 0.102855556 Competence: 0.89446855 Urgency: 0.0 Total: 0.09200106
-
-Goal: RestOn(couch) CulturalUtilitity: 0.11426597 Competence: 0.8905435 Urgency: 0.0 Total: 0.10175882
-
-Goal: RestOn(couch) CulturalUtilitity: 0.1296862 Competence: 0.885885 Urgency: 0.0 Total: 0.114887066
-
-Goal: RestOn(couch) CulturalUtilitity: 0.14393245 Competence: 0.8820454 Urgency: 0.0 Total: 0.12695496
-
-Goal: RestOn(couch) CulturalUtilitity: 0.15940847 Competence: 0.878244 Urgency: 0.0 Total: 0.13999952
