@@ -17,7 +17,6 @@ public class View extends Application {
     public static String[] arguments;
 
     public static void main(String[] args) {
-        System.err.println(args.length);
         arguments = args;
         launch(args);
     }

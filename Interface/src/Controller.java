@@ -5,6 +5,7 @@ import FAtiMA.Core.exceptions.GoalLibParsingException;
 import FAtiMA.Core.exceptions.UnknownGoalException;
 import FAtiMA.Core.goals.Goal;
 import FAtiMA.Core.goals.GoalLibrary;
+import FAtiMA.Core.plans.Step;
 import FAtiMA.Core.sensorEffector.Event;
 import FAtiMA.Core.util.ConfigurationManager;
 import FAtiMA.Core.wellFormedNames.Name;
@@ -26,21 +27,22 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.ChoiceBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
 import FAtiMA.Core.AgentCore;
+import javafx.util.Pair;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by doyle on 02/01/2017.
@@ -49,6 +51,8 @@ import java.util.*;
 public class Controller {
 
     private static final HashMap<Thread, AgentCore> agents = new HashMap();
+    private static WorldTest worldTest;
+    private static Thread worldThread;
 
     private static final String[] ag_modules = {"MaslowHierarchy", "MotivationalState", "SocialRelations", "AdvancedMemory", "EmotionalIntelligence", "ToM", "CulturalDimensionsComponent", "EmpathyComponent"};
     private static String agentName;
@@ -92,15 +96,40 @@ public class Controller {
     @FXML private ProgressBar moodBar;
 
     //Enviroment
-    @FXML private TextField textFieldEnv;
-    @FXML private ChoiceBoxListCell choiceBoxEnv; // ChoiceBoxListCell<E>
+    @FXML private TextArea textAreaEnv;
+    @FXML private ChoiceBox choiceBoxEnv; // ChoiceBoxListCell<E>
     @FXML private Button buttonEnv;
+    private static int buffsize = 250;
 
     private static HashMap<String, Label> currentActiveEmotions; //used to display current active emotions
     private static HashMap<String, Label> currentActiveIntentions; //used to display current active intentions
 
     public void initialize(){
         System.out.println("Controller initialized.");
+
+        //world initialization
+        worldThread = new Thread()
+        {
+            public void run() {
+                String[] arguments = {View.arguments[0], View.arguments[1]};
+                try {
+                    worldTest = WorldTest.createWorld(arguments, textAreaEnv);
+                    worldTest.run();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        worldThread.setName("World");
+        worldThread.start();
+
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        this.ParseFile(worldTest.GetUserOptionsFile()+".txt");
 
         currentActiveEmotions = new HashMap<>();
         currentActiveIntentions = new HashMap<>();
@@ -115,8 +144,6 @@ public class Controller {
         sleepLabelMS.textProperty().bind(dataModel.sleepValueProperty());
 
         moodLabel.textProperty().bind(dataModel.moodValueProperty());
-
-
 
         String xml = View.arguments[0];
         String scenery = View.arguments[1];
@@ -450,35 +477,31 @@ public class Controller {
         return null;
     }
 
-    public int compareIterator(Iterator<ActiveEmotion> activeEmotions, Iterator<ActiveEmotion> currentActiveEmotions)
-    {
-        int compare = 0;
-        while(activeEmotions.hasNext() && currentActiveEmotions.hasNext()){
-            if(!currentActiveEmotions.next().equals(activeEmotions.next())){
-                compare = -2; //not equal on their contents
-                break;
+    private void ParseFile(String name) {
+        byte[] buffer = new byte[buffsize];
+        String data = "";
+        int readCharacters;
+
+        FileInputStream f;
+
+        try {
+            f = new FileInputStream(name);
+            while((readCharacters=f.read(buffer))>0) {
+                data = data + new String(buffer,0,readCharacters);
             }
+        }catch (FileNotFoundException e) {
+            System.out.println(name + "(Error, the system cannot find this options file)");
+            System.exit(-1);
+        }
+        catch (IOException e) {
+            System.out.println(name + "(Error while reading this options file)");
+            System.exit(-1);
         }
 
-        if(activeEmotions.hasNext())
-            return 1;
-        else if(currentActiveEmotions.hasNext())
-            return -1;
-
-        return compare;
+        StringTokenizer st = new StringTokenizer(data,"\r\n");
+        //choiceBoxEnv.getItems().clear();
+        while(st.hasMoreTokens())
+            choiceBoxEnv.getItems().add(st.nextToken());
     }
-
-//    public Set<ActiveEmotion> differenceSet(Set<>)
-//    {
-//        Set<Type> symmetricDiff = new HashSet<Type>(set1);
-//        symmetricDiff.addAll(set2);
-//        // symmetricDiff now contains the union
-//        Set<Type> tmp = new HashSet<Type>(set1);
-//        tmp.retainAll(set2);
-//        // tmp now contains the intersection
-//        symmetricDiff.removeAll(tmp);
-//        // union minus intersection equals symmetric-difference
-//        return symmetricDiff;
-//    }
 
 }

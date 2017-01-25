@@ -156,7 +156,7 @@ public class RemoteAgent extends SocketListener {
 			String properties = _world.GetPropertiesList(target);
 
 			//if(properties.contains("type:object") || properties.contains("type:character"))
-			_world.GetUserInterface().WriteLine(_name + " looks at " + target);
+			_world.WriteLine(_name + " looks at " + target);
 			
 			synchronized(this){
 				this.Send("LOOK-AT " + target + " " + properties);
@@ -230,7 +230,7 @@ public class RemoteAgent extends SocketListener {
 					
 					msg = "PROPERTY-CHANGED " + c.getToM() + " " + name + " " + c.GetValue();
 
-					_world.GetUserInterface().WriteLine(msg);
+					_world.WriteLine(msg);
 					this._world.SendPerceptionToAll(msg);
 					
 					if(c.getToM().equals(Constants.UNIVERSAL))
@@ -327,13 +327,13 @@ class ActionSimulator extends Thread{
 				String perception = "ACTION-FINISHED " + _agentName + " " + _msg;
 				if (utterance != null)
 				{
-					_world.GetUserInterface().WriteLine(_agentName + " says to " + receiver + ": " + utterance + " " + actionName);
+					_world.WriteLine(_agentName + " says to " + receiver + ": " + utterance + " " + actionName);
 					if (_world.GetGreta() != null)
 						_world.GetGreta().Send(utterance);
 				}
 				else
 				{
-					_world.GetUserInterface().WriteLine(_agentName + " says to " + receiver + ": " + say.getMeaning() + " " + actionName);
+					_world.WriteLine(_agentName + " says to " + receiver + ": " + say.getMeaning() + " " + actionName);
 				}
 
 				synchronized(_world){
@@ -345,7 +345,7 @@ class ActionSimulator extends Thread{
 		{
 			String perception = "ACTION-FINISHED " + _agentName + " " + _msg;
 			synchronized(_world){
-				_world.GetUserInterface().WriteLine(_agentName + " " + _msg);
+				_world.WriteLine(_agentName + " " + _msg);
 				_world.SendPerceptionToAll(perception);
 			}
 		}
@@ -376,7 +376,7 @@ class ActionSimulator extends Thread{
 			String perception = "ACTION-FINISHED " + aux;
 			synchronized(_world){
 				_world.SendPerceptionToAll(perception);
-			    _world.GetUserInterface().WriteLine(aux);
+			    _world.WriteLine(aux);
 			}	
 			
 		}

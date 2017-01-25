@@ -466,7 +466,7 @@ public class UserInterface implements ActionListener {
 				if(e.GetProbability(null) > _r.nextFloat())
 				{
 					msg = "PROPERTY-CHANGED " + c.getToM() + " " + name + " " + c.GetValue();
-					_world.GetUserInterface().WriteLine(msg);
+					_world.WriteLine(msg);
 					this._world.SendPerceptionToAll(msg);
 				}
 			}	

@@ -18,5 +18,15 @@
     <orderEntry type="module" module-name="FAtiMA.ReactiveComponent" />
     <orderEntry type="module" module-name="FAtiMA.SocialRelations" />
     <orderEntry type="module" module-name="FAtiMA.ToM" />
+    <orderEntry type="module" module-name="WorldTest" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../WorldTest/Language.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -145,7 +145,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
 
 Reporting property changed: PROPERTY-CHANGED Luke()0.0
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7322311 Competence: 0.6976143 Urgency: 0.0 Total: 1.9060435
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.7480009 Competence: 0.6972195 Urgency: 0.0 Total: 1.9159597
 
 Adding 1st level intention: Eat(cheeseburger)
 
@@ -175,17 +175,7 @@ PropertyChanged: * coke(type) object
 
 Look-At:coke type object
 
-Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
-
-Sending action for execution: Eat cheeseburger
-
-Cannot act now!
-
 Luke: Processing message: ACTION-FINISHED Luke look-at coke
-
-appraising event: EVENT(Luke,look-at,coke)
 
 Luke: Processing message: LOOK-AT couch canRest:True type:object 
 
@@ -202,8 +192,6 @@ PropertyChanged: * couch(type) object
 Look-At:couch type object
 
 Luke: Processing message: ACTION-FINISHED Luke look-at couch
-
-appraising event: EVENT(Luke,look-at,couch)
 
 Luke: Processing message: LOOK-AT user isPerson:True power:10 type:character 
 
@@ -227,11 +215,19 @@ Look-At:user type character
 
 Luke: Processing message: ACTION-FINISHED Luke look-at user
 
+appraising event: EVENT(Luke,look-at,coke)
+
+appraising event: EVENT(Luke,look-at,couch)
+
 appraising event: EVENT(Luke,look-at,user)
 
-Goal: Drink(coke) CulturalUtilitity: 3.2861152 Competence: 0.6968255 Urgency: 0.0 Total: 2.2898488
+Plan Commited: Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
 
-Goal: Drink(coke) CulturalUtilitity: 3.2982495 Competence: 0.69643223 Urgency: 0.0 Total: 2.2970073
+Selecting Action: SELF:Eat(cheeseburger)from plan:Plan P=1.0 Steps: [SELF:Eat(cheeseburger)]
+
+Sending action for execution: Eat cheeseburger
+
+Cannot act now!
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(eatenFood) True
 
@@ -271,13 +267,13 @@ Sending action for execution: Drink coke
 
 Cannot act now!
 
+Goal: RestOn(couch) CulturalUtilitity: 1.986823 Competence: 0.7720298 Urgency: 0.0 Total: 1.5338866
+
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
 PropertyChanged: * Luke(drankLiquid) True
 
 Reporting property changed: PROPERTY-CHANGED Luke(drankLiquid)True
-
-Goal: Drink(coke) CulturalUtilitity: 2.301675 Competence: 1.0 Urgency: 0.0 Total: 2.301675
 
 Luke: Processing message: PROPERTY-CHANGED * Luke(drankLiquid) True
 
@@ -292,6 +288,32 @@ appraising event: EVENT(Luke,Drink,coke)
 Updating motivator Liquid
 
 Updating motivator PhysiologicalSafety
+
+Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
+
+Plan Commited: Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Selecting Action: SELF:RestOn(couch)from plan:Plan P=1.0 Steps: [SELF:RestOn(couch)]
+
+Sending action for execution: RestOn couch
+
+Cannot act now!
+
+Goal: RestOn(couch) CulturalUtilitity: 1.6500006 Competence: 1.0 Urgency: 0.0 Total: 1.6500006
+
+Luke: Processing message: ACTION-FINISHED Luke RestOn couch
+
+can act now!
+
+appraising event: EVENT(Luke,RestOn,couch)
+
+Updating motivator Rest
+
+Updating motivator PhysiologicalSafety
+
+Adding 1st level intention: RestOn(couch)
+
+Adding a new Intention: RestOn(couch)
 
 Switching 2nd level intention from null to Intention: ActivePursuitGoal: RestOn(couch)
 
