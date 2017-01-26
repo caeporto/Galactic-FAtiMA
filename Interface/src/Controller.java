@@ -1,3 +1,4 @@
+import FAtiMA.Core.conditions.Condition;
 import FAtiMA.Core.emotionalState.ActiveEmotion;
 import FAtiMA.Core.emotionalState.EmotionalState;
 import FAtiMA.Core.exceptions.ActionsParsingException;
@@ -5,10 +6,14 @@ import FAtiMA.Core.exceptions.GoalLibParsingException;
 import FAtiMA.Core.exceptions.UnknownGoalException;
 import FAtiMA.Core.goals.Goal;
 import FAtiMA.Core.goals.GoalLibrary;
+import FAtiMA.Core.plans.Effect;
 import FAtiMA.Core.plans.Step;
 import FAtiMA.Core.sensorEffector.Event;
 import FAtiMA.Core.util.ConfigurationManager;
 import FAtiMA.Core.wellFormedNames.Name;
+import FAtiMA.Core.wellFormedNames.Substitution;
+import FAtiMA.Core.wellFormedNames.Symbol;
+import FAtiMA.Core.wellFormedNames.Unifier;
 import FAtiMA.DeliberativeComponent.DeliberativeComponent;
 import FAtiMA.DeliberativeComponent.Intention;
 import FAtiMA.OCCAffectDerivation.OCCAffectDerivationComponent;
@@ -25,6 +30,8 @@ import FAtiMA.socialRelations.SocialRelationsComponent;
 import javafx.animation.Animation;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.control.*;
@@ -100,12 +107,15 @@ public class Controller {
     @FXML private ChoiceBox choiceBoxEnv; // ChoiceBoxListCell<E>
     @FXML private Button buttonEnv;
     private static int buffsize = 250;
+    private Random _r;
 
     private static HashMap<String, Label> currentActiveEmotions; //used to display current active emotions
     private static HashMap<String, Label> currentActiveIntentions; //used to display current active intentions
 
     public void initialize(){
         System.out.println("Controller initialized.");
+
+        _r = new Random();
 
         //world initialization
         worldThread = new Thread()
@@ -243,6 +253,12 @@ public class Controller {
 
         animation.setCycleCount(Animation.INDEFINITE);
         animation.play();
+
+        buttonEnv.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                takeAction();
+            }
+        });
 
     }
 
@@ -502,6 +518,80 @@ public class Controller {
         //choiceBoxEnv.getItems().clear();
         while(st.hasMoreTokens())
             choiceBoxEnv.getItems().add(st.nextToken());
+    }
+
+    private void takeAction() {
+        String aux_action = (String) choiceBoxEnv.getSelectionModel().getSelectedItem();
+        System.err.println(aux_action);
+        StringTokenizer st = new StringTokenizer(aux_action, " ");
+        if (st.countTokens() > 1) {
+            String subject = st.nextToken();
+            String action = st.nextToken();
+            while (st.hasMoreTokens())
+                action = action + " " + st.nextToken();
+            this.UpdateActionEffects(subject, ConvertToActionName(action));
+        }
+
+        String perception = "ACTION-FINISHED " + aux_action;
+        worldTest.WriteLine(aux_action);
+        worldTest.SendPerceptionToAll(perception);
+    }
+
+    private Name ConvertToActionName(String action)
+    {
+        StringTokenizer st = new StringTokenizer(action," ");
+        String actionName = st.nextToken() + "(";
+        while(st.hasMoreTokens())
+        {
+            actionName += st.nextToken() + ",";
+        }
+        if(actionName.endsWith(","))
+        {
+            actionName = actionName.substring(0,actionName.length()-1);
+        }
+
+        actionName = actionName + ")";
+        return Name.ParseName(actionName);
+    }
+
+    private void UpdateActionEffects(String subject, Name action)
+    {
+        ArrayList<Substitution> bindings;
+        Step gStep;
+
+        for(Step s : worldTest.GetActions())
+        {
+            bindings = new ArrayList<Substitution>();
+            bindings.add(new Substitution(new Symbol("[SELF]"), new Symbol(subject)));
+            bindings.add(new Substitution(new Symbol("[AGENT]"), new Symbol(subject)));
+            if(Unifier.Unify(s.getName(),action, bindings))
+            {
+                gStep = (Step) s.clone();
+                gStep.MakeGround(bindings);
+                PropertiesChanged(gStep.getEffects());
+            }
+        }
+    }
+
+    private void PropertiesChanged(ArrayList<Effect> effects)
+    {
+        Condition c;
+        String msg;
+
+        for(Effect e : effects)
+        {
+            c = e.GetEffect();
+            String name = c.getName().toString();
+            if(!name.startsWith("EVENT") && !name.startsWith("SpeechContext"))
+            {
+                if(e.GetProbability(null) > _r.nextFloat())
+                {
+                    msg = "PROPERTY-CHANGED " + c.getToM() + " " + name + " " + c.GetValue();
+                    worldTest.WriteLine(msg);
+                    worldTest.SendPerceptionToAll(msg);
+                }
+            }
+        }
     }
 
 }

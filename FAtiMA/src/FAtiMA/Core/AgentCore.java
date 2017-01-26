@@ -989,7 +989,6 @@ public class AgentCore implements Serializable, AgentModel, IGetModelStrategy {
 	{
 		try
 		{
-
 			ByteArrayOutputStream b = new ByteArrayOutputStream();		
 			ObjectOutputStream s = new ObjectOutputStream(b);
 

@@ -13,7 +13,7 @@
 			</Objects>
 		</WorldSimulator>
 		
-		<Agent name="Luke" displayName="Luke" role="Bully" platform="worldsim" host="localhost" 
+		<Agent name="BullyMonster" displayName="BullyMonster" role="Bully" platform="worldsim" host="localhost" 
 			   port="46874" displayMode="True" sex="M" actionsFile="Actions-oldMaslow" 
 			   goalsFile="GoalLibrary-oldMaslow" cultureName="NoCulture">
 			<Properties>				
@@ -23,6 +23,7 @@
 				<Property name="power" value="8"/>
 			</Properties>	
 		</Agent>
+		
 		<Agent name="John" displayName="John" role="Victim" platform="worldsim" host="localhost" 
 			   port="46874" displayMode="True" sex="M" actionsFile="Actions-oldMaslow" 
 			   goalsFile="GoalLibrary-oldMaslow" cultureName="NoCulture">

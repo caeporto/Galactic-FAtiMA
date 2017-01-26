@@ -10,7 +10,6 @@ xsi:noNamespaceSchemaLocation="./schemas/Actions.xsd">
 		</EffectsOnDrives>
 	</Action>
 
-
 	<Action name="Eat([food])">
 		<PreConditions>
 			<Property name="[food](eatable)" operator="=" value="True"/>
@@ -113,6 +112,49 @@ xsi:noNamespaceSchemaLocation="./schemas/Actions.xsd">
 			<Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-2"/>
 		</EffectsOnDrives>
 	</Action>
+    
+    <!-- user actions GALACTIC -->
+    <Action name="Caress([target])">
+        <PreConditions>
+            <Property name="[target](role)" operator="=" value="Bully"/>
+        </PreConditions>
+        <Effects>
+        </Effects>
+        <EffectsOnDrives>
+            <Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-4"/>
+        </EffectsOnDrives>
+    </Action>
+    
+    <Action name="Patronize([target])">
+        <PreConditions>
+            <Property name="[target](role)" operator="=" value="Bully"/>
+        </PreConditions>
+        <Effects>
+        </Effects>
+        <EffectsOnDrives>
+            <Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-5"/>
+        </EffectsOnDrives>
+    </Action>
+    
+    <Action name="Punch([target])">
+        <PreConditions>
+            <Property name="[target](role)" operator="=" value="Bully"/>
+        </PreConditions>
+        <Effects>
+        </Effects>
+        <EffectsOnDrives>
+            <Motivator hierarchy="Relationships" drive="ReceiveLove" target="[target]" value="-10"/>
+        </EffectsOnDrives>
+    </Action>
+    
+    <Action name="Bite(user)">
+        <PreConditions>
+        </PreConditions>
+        <Effects>
+        </Effects>
+        <EffectsOnDrives>
+        </EffectsOnDrives>
+    </Action>
 	
 	
 </DomainActions>

@@ -145,7 +145,7 @@ Luke: Processing message: ACTION-FINISHED Luke look-at cheeseburger
 
 Reporting property changed: PROPERTY-CHANGED Luke()0.0
 
-Goal: Eat(cheeseburger) CulturalUtilitity: 2.7480009 Competence: 0.6972195 Urgency: 0.0 Total: 1.9159597
+Goal: Eat(cheeseburger) CulturalUtilitity: 2.7322311 Competence: 0.6976143 Urgency: 0.0 Total: 1.9060435
 
 Adding 1st level intention: Eat(cheeseburger)
 
@@ -299,7 +299,7 @@ Sending action for execution: RestOn couch
 
 Cannot act now!
 
-Goal: RestOn(couch) CulturalUtilitity: 1.6500006 Competence: 1.0 Urgency: 0.0 Total: 1.6500006
+Goal: RestOn(couch) CulturalUtilitity: 1.6413686 Competence: 1.0 Urgency: 0.0 Total: 1.6413686
 
 Luke: Processing message: ACTION-FINISHED Luke RestOn couch
 
@@ -334,3 +334,11 @@ appraising event: EVENT(Luke,RestOn,couch)
 Updating motivator Rest
 
 Updating motivator PhysiologicalSafety
+
+Goal: RestOn(couch) CulturalUtilitity: 0.10398893 Competence: 0.89412546 Urgency: 0.0 Total: 0.09297915
+
+Goal: RestOn(couch) CulturalUtilitity: 0.118027255 Competence: 0.8894242 Urgency: 0.0 Total: 0.1049763
+
+Goal: RestOn(couch) CulturalUtilitity: 0.13676502 Competence: 0.8840103 Urgency: 0.0 Total: 0.12090169
+
+Goal: RestOn(couch) CulturalUtilitity: 0.15165138 Competence: 0.8801893 Urgency: 0.0 Total: 0.13348192

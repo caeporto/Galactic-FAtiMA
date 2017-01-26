@@ -1,5 +1,6 @@
 <Character role="Bully" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
+
 	<EmotionalThresholds>
 		<EmotionalThreshold emotion="Love" threshold="3" decay="5"/>
 		<EmotionalThreshold emotion="Hate" threshold="2" decay="5"/>
@@ -73,6 +74,25 @@ xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
 	<EventReactions>
 
 		<!-- General emotional reactions used in more than one episode -->
+        
+        <!-- ##################### Galactic ##################### -->
+        
+        <!-- percebe que nao gosta de receber carinho -->
+        <EmotionalReaction desirability="-8" praiseworthiness="0">
+            <Event subject="*" action="Caress" target="[SELF]"/>
+        </EmotionalReaction>
+        
+        <!-- percebe que nao gosta de condescentes e nao gostaria que outros sofressem o mesmo, culpa quem eh condescente -->
+        <EmotionalReaction desirability="-5" desirabilityForOther="-8" praiseworthiness="-4">
+            <Event subject="*" action="Patronize" target="[SELF]"/>
+        </EmotionalReaction>
+        
+        <!-- percebe que realmente nao gosta de levar um soco e nao gostaria que outros sofressem o mesmo, culpando extremamente quem deu o soco -->
+        <EmotionalReaction desirability="-10" desirabilityForOther="-10" praiseworthiness="-10">
+            <Event subject="*" action="Punch" target="[SELF]"/>
+        </EmotionalReaction>
+        
+        <!-- ##################### Galactic ##################### -->
 
 		<!-- percebe que gosta de comer -->
 		<EmotionalReaction desirability="6" praiseworthiness="0"> 
@@ -98,6 +118,13 @@ xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
 		<EmotionalReaction desirability="-5" praiseworthiness="-5">
 			<Event subject="[SELF]" action="Cry"/>
 		</EmotionalReaction>
+        
+        <!-- poderia ser uma reacao emocional entretanto nao existe um meio de verificar que uma acao
+         nao ocorreu, ou que nao ocorre periodicamente. O fato do agente estar sozinho nao eh algo que consegue ser facilmente observado pela IA do agente. -->
+        <!-- percebe que odeia estar sozinho -->
+        <EmotionalReaction desirability="-5" praiseworthiness="-5">
+            <Event subject="[SELF]" action="Cry"/>
+        </EmotionalReaction>
 		
 		<!-- percebe que gosta de realizar bullying -->
 		<EmotionalReaction desirability="10" desirabilityForOther="-5" praiseworthiness="6">
@@ -123,14 +150,22 @@ xsi:noNamespaceSchemaLocation="../../schemas/Character.xsd">
 	
 	<ActionTendencies>
 
-		<ActionTendency action="SpeechAct([Target],mock)">
+		<ActionTendency action="SpeechAct([target],mock)">
 			<Preconditions>
-				<Property name="[Target](role)" operator="=" value="Victim" />
+				<Property name="[target](role)" operator="=" value="Victim" />
             </Preconditions>
 			<ElicitingEmotion type="Distress" minIntensity="2">
 				<CauseEvent />
 			</ElicitingEmotion>
 		</ActionTendency>
+        
+        <ActionTendency action="Bite(user)">
+            <Preconditions>
+            </Preconditions>
+            <ElicitingEmotion type="Anger" minIntensity="1">
+                <CauseEvent />
+            </ElicitingEmotion>
+        </ActionTendency>
         
 	</ActionTendencies>
 </Character>
